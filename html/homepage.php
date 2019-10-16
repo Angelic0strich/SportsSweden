@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/homepage.css">
 </head>
 <body>
+<?php include ("menu.php")?>
 <div class = "content">
     <div class = "welcoming">
         <h1>Welcome</h1>

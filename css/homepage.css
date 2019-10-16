@@ -2,4 +2,20 @@ body
 {
     background-color: black;
     color: dodgerblue;
+
+}
+.content
+{
+    display: block;
+    width: 70em;
+    margin: 0 auto;
+}
+.welcoming
+{
+    text-align: center;
+    font-size: 20px;
+}
+img
+{
+    max-width: 100%;
 }

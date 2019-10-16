@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="../css/homepage.css">
 </head>
 <body>
-<h1>Welcome</h1>
-<img src="../img/Sports-Sweden-full-logo.png">
+<div class = "content">
+    <div class = "welcoming">
+        <h1>Welcome</h1>
+        <h3>Lorem ipsum bla bla bla</h3>
+    </div>
+
+    <img src="../img/Sports-Sweden-full-logo.png">
+</div>
+
 
 </body>
 </html>

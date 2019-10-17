@@ -13,8 +13,16 @@
         <h1>Welcome</h1>
         <h3>Lorem ipsum bla bla bla</h3>
     </div>
+    <div class="news-panel">
+        <div class="news-one"></div>
+        <div class="news-two"></div>
+        <div class="news-three"></div>
+        <div class="news-four"></div>
+        <div class="news-five"></div>
+        <div class="news-six"></div>
 
-    <img src="../img/Sports-Sweden-full-logo.png">
+    </div>
+
 </div>
 
 

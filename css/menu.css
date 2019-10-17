@@ -1,3 +1,8 @@
+#menu
+{
+    background-color: dodgerblue;
+    font-family: "Patua One", sans-serif;
+}
 #menu-bar {
     margin: 0 ;
     padding: 0 ;
@@ -8,9 +13,11 @@
 {
     font-size: 60px;
     display: inline ;
-    margin-right: 1px ;
+    padding: 10px auto;
+    margin-right: 20px ;
+    /*border: 10px double darkblue;*/
     color: #fff ;
-    background: #c00 ;
+    background: darkblue;
 }
 .menu-logo
 {

@@ -9,7 +9,7 @@
         <ul id = "menu-bar">
             <li><img class = "menu-logo" src="../img/Sports-Sweden-full-logo.png"></li>
             <li>Home</li>
-            <li>Catalog</li>
+            <li><a href="category.php">Catalog</a> </li>
             <li>About us</li>
             <li>Contact</li>
             <li>Log in</li>

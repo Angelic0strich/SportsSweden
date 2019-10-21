@@ -7,8 +7,8 @@
 <nav id="menu">
 
         <ul id = "menu-bar">
-            <li><img class = "menu-logo" src="../img/Sports-Sweden-full-logo.png"></li>
-            <li>Home</li>
+            <li><a href="homepage.php"><img class = "menu-logo" src="../img/Sports-Sweden-full-logo.png"></a></li>
+
             <li><a href="category.php">Catalog</a> </li>
             <li>About us</li>
             <li>Contact</li>

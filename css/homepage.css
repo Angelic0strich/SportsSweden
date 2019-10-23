@@ -20,9 +20,62 @@ img
 {
     max-width: 100%;
 }
+span
+{
+    max-width: 100%;
+}
 .news-panel
 {
     display: grid;
-    background-color: white;
 
+    width: 100%;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 300px 300px 300px;
+    background-color: darkseagreen;
+
+
+}
+.news-one
+{
+    border : 20px;
+    grid-column: auto;
+    grid-row: auto;
+    max-height: 100%;
+    background-color: rebeccapurple;
+
+}
+.news-two
+{
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 100%;
+    background-color: darkblue;
+}
+.news-three
+{
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 100%;
+    background-color: cyan;
+}
+.news-four
+{
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 100%;
+    background-color: greenyellow;
+}
+.news-five
+{
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 100%;
+    background-color: yellow;
+}
+.news-six
+{
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 100%;
+    background-color: orange;
 }

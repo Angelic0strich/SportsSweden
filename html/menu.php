@@ -10,7 +10,7 @@
             <li><a href="homepage.php"><img class = "menu-logo" src="../img/Sports-Sweden-full-logo.png"></a></li>
 
             <li><a href="category.php">Catalog</a> </li>
-            <li>About us</li>
+            <li><a href="about-us.php">About us</a></li>
             <li>Contact</li>
             <li><a href="user.php">Login</a></li>
         </ul>

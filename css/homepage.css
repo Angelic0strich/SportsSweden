@@ -1,6 +1,6 @@
 body
 {
-    background-color: black;
+    background-color: darkcyan;
     color: dodgerblue;
 
 }
@@ -27,7 +27,6 @@ span
 .news-panel
 {
     display: grid;
-
     width: 100%;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 300px 300px 300px;
@@ -37,7 +36,6 @@ span
 }
 .news-one
 {
-    border : 20px;
     grid-column: auto;
     grid-row: auto;
     max-height: 100%;

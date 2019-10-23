@@ -13,7 +13,9 @@ if (isset($_POST['submit'])) {
 ?>
 <html>
 <head>
+    <title>Log In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../img/Sports-Sweden-crop-logo.png">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;

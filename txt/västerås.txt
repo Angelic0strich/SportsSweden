@@ -1,0 +1,179 @@
+1. Name
+2. Website
+3. Adress
+4. Sport
+5. Extra
+6. Logo
+
+1. Basket 1
+2. Athletics 1
+3. Gymnastics 1
+4. Badminton 1
+5. Football 7
+6. Floorball 5
+7. Canoe 1
+8. American football 1
+9. Karate 1
+10. Swimming 1
+11. Bandy 1
+12. Bowling 1
+13. Skiing and orientation 1
+14. Sailing 1
+
+1. Västerås Basket
+2. www.vasterasbasket.se
+3. Box 166, 72105 Västerås
+4. Basket
+5. Founded 1989. Home: Viksängshallen, Västerås.
+6. https://wss.se/wp/wp-content/uploads/2011/03/WSS-Logo-Full-1040x490-transparent.png
+
+1. Västerås Friidrottsklubb
+2. vasterasfriidrott.se
+3. Kungsängsgatan 8, 72130 Västerås
+4. Friidrott (Athletics)
+5. Founded 1989.
+6. https://vasterasfriidrott.se/_files/200000002-a04d3a1451/200/vfk_logotype.png
+
+1. Västerås Gymnastikförening
+2. www.vgf.nu
+3. Vasagatan 60, 72223 Västerås
+4. Gymnastik (Gymnastics)
+5. Founded 1899.
+
+1. Västerås Badmintonförening
+2. www.vbmf.net
+3. Vasagatan 60, 72223 Västerås (same as the gymnastics)
+4. Badminton
+5. Founded 1950.
+
+1. VästeråsIrsta HF
+2. http://www.vasterasirsta.se
+3. Vasagatan 73, 72223 Västerås
+4. Handboll
+5. Västerås HF was founded 1934, Irsta HF founded 1965, both of them was made into VästeråsIrsta HF in 1998/1999
+
+1. Västerås IK Fotboll
+2. www.vik-fotboll.com
+3. Apalby, 72223 Västerås
+4. Fotboll
+5. Founded 1913.
+
+1. Västerås IBF
+2. www.vib.se
+3. Sjöhagsvägen 7, 72132 Västerås
+4. Innebandy (Floorball?)
+5. Apparently hard to say when it was made, its a mash-up of teams now.
+
+1. Västerås kanotförening
+2. www.vasteraskanot.se
+3. Björnövägen 78, 72348 Västerås
+4. Kanot (Canoe)
+5. Founded 1922.
+
+1. Västerås Roedeers
+2. www.roedeers.se
+3. Regementsgatan 12, 72345 Västerås
+4. American football
+5. Founded 1989.
+
+1. Västerås Rönnby IBK
+2. https://www.ronnby.se/
+3. Box 1197, 72129 Västerås
+4. Innebandy (Floorball?)
+5. Founded 1992.
+
+1. Västerås Shukokai Karateklubb
+2. www.vasterasshukokai.se
+3. Liljegatan 1, Norra Gryta 72246 Västerås
+4. Karate
+5. Founded 1978.
+
+1. Västerås Simsällskap
+2. http://www.vasterassim.nu/
+3. Lögarängsbadet, 721 32 Västerås
+4. Swimming
+5. Founded 1910
+
+1. Västerås SK (VSK)
+2. vsk.nu
+3. ---
+4. Sports
+5. Founded 1904. This is one of the main sportsclubs, but its not only 1 sport but right now its for 4 different sports which will be separatly listed below.
+
+1. Västerås SK BK
+2. https://vskbandy.se/
+3. ABB Arena Syd, Bandystugan, 72217 Västerås
+4. Bandy
+5. Founded 1904. VSK's most known sport.
+
+1. Västerås SK FK
+2. https://www.vskfotboll.nu/
+3. Pontus Widéns väg 5, 72223 Västerås
+4. Football
+5. Founded 1904. VSK's second biggest sport.
+
+1. Västerås SK Bowling
+2. https://idrottonline.se/VasterasSKBK-Bowling
+3. Slånbärsgatan 2, 72223 Västerås
+4. Bowling
+5. Founded 1944
+
+1. Västerås SK Innebandy
+2. https://vskinnebandy.wordpress.com/
+3. Skönsbogatan 15, 72476 Västerås
+4. Innebandy (Floorball?)
+5. Founded 2011
+
+1. Västerås SOK
+2. https://idrottonline.se/VasterasSOK-Orientering
+3. Önstavägen 1, 72243 Västerås
+4. Skid- och orienteringsklubb (Skiing and orientation)
+5. Founded 1988
+
+1. IFK Västerås
+2. http://www.ifk.nu/
+3. Vasagatan 71, 72217 Västerås
+4. Football
+5. Founded 1898. They have skiing, figure skating and bowling as well but football seems to be their big thing.
+
+1. Westerås Segelsällskap
+2. https://wss.se/
+3. Box 228, 72106 Västerås
+4. Segling (Sailing)
+5. Founded 1883
+
+1. Skiljebo SK (SSK)
+2. http://www.skiljebosk.nu
+3. Väderleksgatan 20, Hamre IP, 72131 Västerås
+4. Football
+5. Founded 1944
+
+1. IK Oden
+2. https://idrottonline.se/IKOden-Fotboll/
+3. IK Oden - Fotboll, Brandthovda IP, 72596 Västerås
+4. Football
+5. Founded 1929. Had several sports but only football remains.
+
+1. Malmabergs IK
+2. https://malmabergsik.se/
+3. Sintervägen 14, 72130 Västerås
+4. Innebandy (Floorball)
+5. Founded 1955. Have had several sports but floorball remains.
+
+1. Gideonsbergs IF
+2. http://www.gideonsbergsif.se
+3. Önsta Idrottsplats, 72244 Västerås
+4. Football
+5. Founded 1955
+
+1. IK Franke
+2. http://www.ikfranke.com
+3. Råby IP 1, 72472 Västerås
+4. Football
+5. Founded 1943. First succeeded with floorball, but now its about football.
+
+1. Aron IK
+2. ---
+3. ---
+4. Floorball
+5. Founded 1984. Think we can skip this, not much info out.

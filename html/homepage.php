@@ -17,34 +17,31 @@
         <h3>And welcome in the Sports Sweden platform !</h3>
         <p><strong>Here you will find news about sport clubs in Sweden main cities, discover new clubs around your city, and register in it !</strong></p>
     </div>
-    <div class="news-panel">
-        <div class="news-one">
-            <img src="../img/image_2.jpg">
-            <span class="content">
+    <div class="news-container">
+
+        <div class="news"> <!-- ONE -->
+            <img class="news-image" src="../img/image_2.jpg">
+            <span class="highlight">
 					floorball team are ready to world cup
             </span>
         </div>
-        <div class="news-two">
-            &nbsp;
-           <!-- <img src="../img/hoki.jpg">
-            <span class="content">
-					Sweden team prepareing for world cup
-            </span>-->
+        <div class="news"> <!-- TWO -->            &nbsp;
+           <img class="news-image" src="../img/hoki.jpg">
+            <span class="highlight">
+					Sweden team preparing for world cup
+            </span>
         </div>
-        <div class="news-three">
-            <!--<img src="../img/th.jpg">
-            <span class="content">
+        <div class="news"> <!-- THREE -->
+            <img class="news-image" src="../img/th.jpg">
+            <span class="highlight">
 					New Racing club
-				</span>-->
+				</span>
         </div>
-        <div class="news-four">
-
+        <div class="news"> <!-- FOUR -->
         </div>
-        <div class="news-five">
-
+        <div class="news"> <!-- FIVE -->
         </div>
-        <div class="news-six">
-
+        <div class="news"> <!-- SIX -->
         </div>
 
     </div>

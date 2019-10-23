@@ -15,65 +15,45 @@ body
 {
     text-align: center;
     font-size: 20px;
+    font-family: "Fjalla One", sans-serif;
 }
 img
 {
     max-width: 100%;
 }
-span
+.highlight
 {
     max-width: 100%;
+    display: inline-block;
+    background-color: #cccccc;
+    font-family: "Fjalla One";
+    font-size: 40px;
+    line-height: 1.03em;
 }
-.news-panel
+.news-container
 {
     display: grid;
-    width: 100%;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, 350px);
     background-color: darkseagreen;
+    max-width: 100%;
 
 
 }
-.news-one
+.news-image
 {
-    grid-column: auto;
-    grid-row: auto;
+    height: 100%;
+    max-width: 100%;
     max-height: 100%;
-    background-color: rebeccapurple;
+    position: relative;
 
 }
-.news-two
+.news
 {
-    grid-column: auto;
-    grid-row: auto;
+    display: block;
     max-width: 100%;
-    background-color: darkblue;
-}
-.news-three
-{
-    grid-column: auto;
-    grid-row: auto;
-    max-width: 100%;
-    background-color: cyan;
-}
-.news-four
-{
-    grid-column: auto;
-    grid-row: auto;
-    max-width: 100%;
-    background-color: greenyellow;
-}
-.news-five
-{
-    grid-column: auto;
-    grid-row: auto;
-    max-width: 100%;
-    background-color: yellow;
-}
-.news-six
-{
-    grid-column: auto;
-    grid-row: auto;
-    max-width: 100%;
-    background-color: orange;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    margin : 10px;
+    padding: 20px;
 }

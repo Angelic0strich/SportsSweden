@@ -12,7 +12,7 @@
             <li><a href="category.php">Catalog</a> </li>
             <li>About us</li>
             <li>Contact</li>
-            <li>Log in</li>
+            <li><a href="user.php">Login</a></li>
         </ul>
 </nav>
 </html>

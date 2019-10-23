@@ -1,9 +1,13 @@
+NOT FINISHED!
+Need to get URL for logos and other pictures.
+
 1. Name
 2. Website
-3. Adress
+3. Address
 4. Sport
 5. Extra
 6. Logo
+7. Picture
 
 1. Basket 1
 2. Athletics 1
@@ -39,6 +43,7 @@
 3. Vasagatan 60, 72223 Västerås
 4. Gymnastik (Gymnastics)
 5. Founded 1899.
+6. http://www.vgf.nu/im/hemsidaLogga/125/2446/_genLogga.png?v=33
 
 1. Västerås Badmintonförening
 2. www.vbmf.net

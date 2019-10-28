@@ -1,0 +1,15 @@
+body
+{
+    background-color: darkcyan;
+    color: dodgerblue;
+
+}
+.content
+{
+    display: block;
+    width: 70em;
+    margin: 0 auto;
+    background-color: #bdfbe7;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+}

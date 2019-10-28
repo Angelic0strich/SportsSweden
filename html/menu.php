@@ -13,6 +13,9 @@
             <li><a href="about-us.php">About us</a></li>
             <li>Contact</li>
             <li><a href="user.php">Login</a></li>
+            <li id="search-container"><input id="search-data" type="text" placeholder="Search"/>
+                <div id="search-result-container">
+                </div> </li>
         </ul>
 </nav>
 </html>

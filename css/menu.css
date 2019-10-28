@@ -24,3 +24,23 @@
     max-width: 120px;
     text-align: right;
 }
+
+#search-data {
+    background-color: rgba(100, 100, 100, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+#search-result-container{
+    position: absolute;
+    background-color: darkblue;
+    right: 0px;
+    min-width: 430px;
+}
+#search-result-container :hover {
+    background-color: gray;
+}
+#search-container{
+    position: relative;
+}

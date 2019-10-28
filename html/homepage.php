@@ -17,34 +17,57 @@
         <h3>And welcome in the Sports Sweden platform !</h3>
         <p><strong>Here you will find news about sport clubs in Sweden main cities, discover new clubs around your city, and register in it !</strong></p>
     </div>
-    <div class="news-container">
 
-        <div class="news"> <!-- ONE -->
-            <img class="news-image" src="../img/image_2.jpg">
-            <span class="highlight">
+
+
+
+
+
+    <div id="bar1" align="left">
+        <div id="newsImage1" class="newsImage">
+            <div class= "content" >
+                <div class="title">Sweden Team</div>
+
+                <div class="description">Sweden are in a draw against Spain in the Euro 2020 qualifiers .</div>
+            </div>
+        </div>
+        <div id="newsImage2" class="newsImage">
+            <div class="title">Djorgarden team</div>
+            <br>
+            <div class="description">Djorgarden top the standings with two rounds to close</div>
+        </div>
+        <div id="newsImage3" class="newsImage">
+            <div class="title">Stockholm ATP</div>
+            <br>
+            <div class="description">Karl Freiberg leaves the Stockholm championship from the first round</div>
+        </div>
+    </div>
+    <br />
+    <div class="bar" id="bar2" align="center">
+        <div class="box">
+            <img src="../img/image_2.jpg">
+            <span class="content">
 					floorball team are ready to world cup
-            </span>
+				</span>
         </div>
-        <div class="news"> <!-- TWO -->            &nbsp;
-           <img class="news-image" src="../img/hoki.jpg">
-            <span class="highlight">
-					Sweden team preparing for world cup
-            </span>
+        <div class="box" id="box2">
+            &nbsp;
+            <img src="../img/hoki.jpg">
+            <span class="content">
+					Sweden team prepareing for world cup
+				</span>
         </div>
-        <div class="news"> <!-- THREE -->
-            <img class="news-image" src="../img/th.jpg">
-            <span class="highlight">
+        <div class="box">
+            <img src="../img/th.jpg">
+            <span class="content">
 					New Racing club
 				</span>
         </div>
-        <div class="news"> <!-- FOUR -->
-        </div>
-        <div class="news"> <!-- FIVE -->
-        </div>
-        <div class="news"> <!-- SIX -->
-        </div>
-
     </div>
+
+
+
+
 
 </div>
 

@@ -1,16 +1,33 @@
 <?php
 session_start();
-require "password_check.php";
+require "password_check_user.php";
 
 if (isset($_POST['submit'])) {
     if (check_password($_POST['uname'], $_POST['psw'])) {
         $_SESSION['username'] = $_POST['uname'];
         header("Location: user.php");
     } else {
+        echo "<h1>Wrong user's username or password</h1>";
+    }
+}
+?>
+
+<script>
+<?php
+
+require "password_check_admin.php";
+
+if (isset($_POST['submit'])) {
+    if (check_password_admin($_POST['em'], $_POST['psw'])) {
+        $_SESSION['email'] = $_POST['em'];
+        header("Location: admin.php");
+    } else {
         echo "<h1>Wrong admin's username or password</h1>";
     }
 }
 ?>
+</script>
+
 <html>
 <head>
     <title>Log In</title>
@@ -158,13 +175,69 @@ if (isset($_POST['submit'])) {
 <body>
 
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In As User</button>
-<button onclick="location.href = 'homepage.php';" style="width:auto;">Home page</button>
-<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign In As Admin</button>
+
+<h1>LOGIN PAGE</h1>
+
+
+<div class="container edvin-content">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In As User</button>
+    <button onclick="location.href = 'homepage.php';" style="width:auto;">Home page</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edvin" onclick="document.getElementById('edvin').style.display='block'" style="width:auto;">Sign In As Admin</button>
+</div>
+
+<div class="modal fade" id="edvin">
+    <form class="modal-content animate" method="post" action='#'>
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h1>Admin</h1>
+            </div>
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('edvin').style.display='none'" class="close"
+                  title="Close Box">&times;</span>
+                <img src="profile.jpg" alt="Profile" class="profile">
+            </div>
+            <div class="container">
+                <label for="em"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="em" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" name="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="document.getElementById('edvin').style.display='none'" class="cancelbtn"> Close </button>
+                <span class="psw"><a href="/sportsweden/html/register_admin.php">Register</a></span>
+            </div>
+
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('edvin');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target === modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+
+        </div>
+
+    </form>
+
+</div>
+
+
 
 <div id="id01" class="modal">
 
     <form class="modal-content animate" method="post" action='#'>
+        <h1>User</h1>
         <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close"
                   title="Close Box">&times;</span>
@@ -188,30 +261,24 @@ if (isset($_POST['submit'])) {
                 Cancel
             </button>
 
-            <span class="psw"><a href="/sportsweden/html/register.php">Register</a></span>
+            <span class="psw"><a href="/sportsweden/html/register_user.php">Register</a></span>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target === modal) {
+                        modal.style.display = "none";
+                    }
+                }
+
+            </script>
 
     </form>
 </div>
 
-
-
-
-<script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
-
-
-
-
-
-
 </body>
 </html>
+

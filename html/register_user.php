@@ -142,7 +142,7 @@
     </style>
 </head>
 <body>
-<form action="register.php" method="POST">
+<form action="register_user.php" method="POST">
 <div class="container">
 
     <label for="fname"><b>FirstName</b></label>
@@ -171,20 +171,10 @@
 
 
 
-<script>
-    // Get the modal
-    var modal = document.getElementById('id01');
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
 <?php
 /*session_start();
-require "password_check.php";
+require "password_check_user.php";
 
 if (isset($_POST['submit'])) {
     if (check_password($_POST['uname'], $_POST['psw'])) {
@@ -241,6 +231,7 @@ if(!empty($fname)||!empty($lname)||!empty($phone)||!empty($uname)||!empty($psw))
     die();
 }
 ?>
+
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 require "load.php";
 session_start();
 if (isset($_POST['logout'])) {
-    unset($_SESSION['username']);
+    unset($_SESSION['email']);
     unset($_SESSION['password']);
 
 }
@@ -43,7 +43,7 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
 </head>
 <body>
 <?php
-if (isset($_SESSION['username'])) {
+if (isset($_SESSION['email'])) {
 
 } else {
     header("Location: login.php");
@@ -51,8 +51,15 @@ if (isset($_SESSION['username'])) {
 
 ?>
 <form action="#" method="post">
-    <label for='fname'>Insert into textfile : </label>
+    <label for='fname'>Name : </label>
     <input type='text' id='fname' name='text'>
+    <br>
+    <label for='fname'>Sport : </label>
+    <input type='text' id='fname' name='text'>
+    <br>
+    <label for='fname'>City : </label>
+    <input type='text' id='fname' name='text'>
+    <br>
     <input type='submit' value='Submit' name='submit'>
     <input type='submit' value='Log out' name='logout'>"
 </form>

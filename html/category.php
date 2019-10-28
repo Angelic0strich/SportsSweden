@@ -19,22 +19,22 @@
     <div class="grid-container">
         <div class="side-bar-left">
             <br><br><br>
-            <h2>city </h2>
+            <h2>CITY</h2>
 
             <form action="http:///action_page.php">
-                <input type="checkbox" name="Stockholem">Stockholem <br>
-                <input type="checkbox" name="Malmo">Malmo<br>
-                <input type="checkbox" name="Gothenburg">Gothenburg<br>
+                <input type="checkbox" name="Stockholm">Stockholm <br>
+                <input type="checkbox" name="Malmo">Mälmö<br>
+                <input type="checkbox" name="Gothenburg">Göteborg<br>
                 <input type="checkbox" name="Vasteras">Västerås <br>
                 <br>
 
-                <h2>sports</h2>
+                <h2>SPORTS</h2>
                 <input type="checkbox"> Football<br>
-                <input type="checkbox"> Bascetball<br>
+                <input type="checkbox"> Basketball<br>
                 <input type="checkbox"> Handball<br>
                 <input type="checkbox"> Volleyball<br>
                 <input type="checkbox"> Tennis<br>
-                <input type="checkbox"> polo<br>
+                <input type="checkbox"> Polo<br>
                 <input type="checkbox"> Floorball<br>
                 <input type="checkbox"> Swimming <br>
                 <br> <br>

@@ -1,0 +1,19 @@
+{
+    "news":[
+        {
+            "title":"Cosmic Winter Wonderland", 
+            "imgurl":"https://www.nasa.gov/sites/default/files/thumbnails/image/ngc6357.jpg",
+            "content":"Although there are no seasons in space, this cosmic vista invokes thoughts of a frosty winter landscape."
+        },
+        {
+            "title":"NASA's Juno Mission Cheks Out Eclipse on Jupiter", 
+            "imgurl":"https://cdn.mos.cms.futurecdn.net/Utrp9avtzvdee9UZyrxLVC-650-80.jpg",
+            "content":"All is well on our largest neighbor; NASA's Juno spacecraft just managed to spot the shadow of Jupiter's moon, Io, passing over its marbled clouds."
+        },
+        {
+            "title":"Europe Wants Ideas for Cave-Spelumking Moon Robots", 
+            "imgurl":"https://cdn.mos.cms.futurecdn.net/8X7AGzgNVb86gk9Sbn8xYo-1024-80.jpg",
+            "content":"As NASA makes a big push to land humans on the moon's surface by 2024, the European Space Agency (ESA) wants to learn more about the lunar caves that lie beneath."
+        }
+        ]
+}

@@ -18,4 +18,37 @@
                 </div> </li>
         </ul>
 </nav>
+
+<script>
+    $(document).ready(function() {
+            $('#search-data').unbind().keyup(function(e) {
+                    var value = $(this).val();
+                    if (value.length>0) {
+                        //alert(99933);
+                        searchData(value);
+                    }
+                    else {
+                        $('#search-result-container').hide();
+                    }
+                }
+            );
+        }
+    );
+    function searchData(val){
+        $('#search-result-container').show();
+        $('#search-result-container').html('<div><img src="preloader.gif" width="50px;" height="50px"> <span style="font-size: 20px;">Please Wait...</span></div>');
+        $.ajax({
+            url:'search_articles.php',
+            method:'get',
+            data: {
+                'search-data': val
+            },
+            success: function (data){
+                $('#search-result-container').html(data)
+            }
+        })
+    }
+
+</script>
+
 </html>

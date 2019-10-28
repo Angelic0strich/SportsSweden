@@ -1,0 +1,19 @@
+{
+    "news":[
+        {
+            "title":"SpaceX's Next Starship Prototype Taking Shape ", 
+            "imgurl":"https://cdn.mos.cms.futurecdn.net/gLAiKfmDHWuzNpo5TeSLe4-1024-80.jpg",
+            "content":"Construction of the test craft is proceeding apace, as two new photos posted on Twitter today (Sept. 17) by company founder and CEO Elon Musk reveal."
+        },
+        {
+            "title":"NASA Selects New Mission to Explore Origins of Universe", 
+            "imgurl":"https://www.nasa.gov/sites/default/files/thumbnails/image/spherex.jpg",
+            "content":"NASA has selected a new space mission that will help astronomers understand both how our universe evolved and how common are the ingredients for life in our galaxy’s planetary systems."
+        },
+        {
+            "title":"Europe Wants Ideas for Cave-Spelumking Moon Robots", 
+            "imgurl":"https://cdn.mos.cms.futurecdn.net/8X7AGzgNVb86gk9Sbn8xYo-1024-80.jpg",
+            "content":"As NASA makes a big push to land humans on the moon's surface by 2024, the European Space Agency (ESA) wants to learn more about the lunar caves that lie beneath."
+        }
+        ]
+}

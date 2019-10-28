@@ -1,0 +1,19 @@
+{
+    "news":[
+        {
+            "title":"NASA to Hold Media Call for Discovery Program Announcement", 
+            "imgurl":"https://www.nasa.gov/sites/default/files/thumbnails/image/discover_missions_banner.jpg",
+            "content":"NASA will discuss the results of its latest Discovery mission selection during a media teleconference at 4 p.m. EST on Wednesday, Jan. 4."
+        },
+        {
+            "title":"NASA Moves Up Launch of Psyche Mission to a Metal Asteroid", 
+            "imgurl":"https://www.nasa.gov/sites/default/files/thumbnails/image/pia21499-20170523.jpg",
+            "content":"Psyche, NASA's Discovery Mission to a unique metal asteroid, has been moved up one year with launch in the summer of 2022, and with a planned arrival at the main belt asteroid in 2026 -- four years earlier than the original timeline."
+        },
+        {
+            "title":"Hubble Catches 2 Galaxies at Play", 
+            "imgurl":"https://www.nasa.gov/sites/default/files/thumbnails/image/potw1931a.jpg",
+            "content":"The pair of strange, luminescent creatures at play in this image are actually galaxies — realms of millions upon millions of stars."
+        }
+        ]
+}

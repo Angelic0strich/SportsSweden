@@ -20,7 +20,7 @@
     <div class="filter-bar">
             <div class="dropdown" id="button-left">
                 <button class="dropbtn">Search by city</button>
-                <div class="dropdown-content" style="left:0;">
+                <div class="dropdown-content" >
                     <a href="#">Stockholm</a>
                     <a href="#">Mälmö</a>
                     <a href="#">Göteborg</a>

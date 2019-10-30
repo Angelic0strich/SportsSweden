@@ -1,0 +1,85 @@
+Name : Kanalplan
+Sport : Football
+City : Stockholm
+Adress : Södermannagatan 63, 116 66
+Logo :
+Image :
+
+Name : Enskede IK
+Sport :  Football
+City : Stockholm
+Adress : Enskedevägen 95, 122 63 Enskede
+Logo : http://www.enskedeik.nu/images/15/10686/719554_512.JPG?v=2019-01-31%2016:29:33
+Image : 
+
+
+Name : Lidingö Basket
+Sport : Basketball
+City : Stockholm
+Adress : Läroverksvägen 17, 181 42 Lidingö
+Logo :
+Image : https://i.ytimg.com/vi/Mm5qQlokHTw/maxresdefault.jpg
+
+
+Name : Skuru Basket
+Sport : Basketball
+City : Stockholm
+Adress : Griffelvägen 11, 131 40 Nacka
+Logo : https://www4.idrottonline.se/globalassets/skuru-ik---basket/loggor/namnlost-3.jpg
+Image : https://www4.idrottonline.se/globalassets/skuru-ik---basket/dsc03736.jpg
+
+
+Name : Idrottsklubben Bolton
+Sport : Handball
+City : Stockholm
+Adress : Odengatan 71, 113 22 Stockholm
+Logo : https://handbollskanalen.se/wp-content/uploads/2016/02/IK-Bolton.png
+Image : https://handbollskanalen.se/wp-content/uploads/2017/04/IK-Bolton.jpg
+
+
+Name : Årsta Aik Handbollförening
+Sport : Handball
+City : Stockholm
+Adress : Skeppsmäklargatan 1, 120 69 Stockholm
+Logo :
+Image :
+
+
+Name :
+Sport :
+City : Stockholm
+Adress :
+Logo :
+Image :
+
+
+Name :
+Sport :
+City : Stockholm
+Adress :
+Logo :
+Image :
+
+
+Name :
+Sport :
+City : Stockholm
+Adress :
+Logo :
+Image :
+
+
+Name :
+Sport :
+City : Stockholm
+Adress :
+Logo :
+Image :
+
+
+Name :
+Sport :
+City : Stockholm
+Adress :
+Logo :
+Image :

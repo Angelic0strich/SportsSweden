@@ -1,6 +1,12 @@
+a:link
+{
+    text-decoration: none;
+    text-decoration-color: white;
+}
 #menu
 {
-    background-color: #4CAF50;
+    background-color: #00c2e5;
+    color: white;
     font-family: "Patua One", sans-serif;
 }
 #menu-bar {

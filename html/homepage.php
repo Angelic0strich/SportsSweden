@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 <?php include ("menu.php")?>
 <div class = "content">

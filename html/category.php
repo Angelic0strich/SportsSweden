@@ -9,39 +9,39 @@
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 
 </head>
+<style>
+    
+</style>
 <body>
+
 <?php include ("menu.php")?>
+
 <div class = "content">
-    <div class = "welcoming">
-        <h1>Catalog</h1>
-        <h3>Here you can browse through our wide database of sport clubs in sweden</h3>
+    <div class="filter-bar">
+            <div class="dropdown" id="button-left">
+                <button class="dropbtn">Search by city</button>
+                <div class="dropdown-content" style="left:0;">
+                    <a href="#">Stockholm</a>
+                    <a href="#">Mälmö</a>
+                    <a href="#">Göteborg</a>
+                    <a href="#">Västerås</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="button-right">
+                <button class="dropbtn">Search by sport</button>
+                <div class="dropdown-content">
+                    <a href="#">Football</a>
+                    <a href="#">Basketball</a>
+                    <a href="#">Volleyball</a>
+                    <a href="#">Tennis</a>
+                    <a href="#">Polo</a>
+                    <a href="#">Floorball</a>
+                    <a href="#">Swimming</a>
+                </div>
+            </div>
     </div>
-    <div class="grid-container">
-        <div class="side-bar-left">
-            <br><br><br>
-            <h2>CITY</h2>
 
-            <form action="http:///action_page.php">
-                <input type="checkbox" name="Stockholm">Stockholm <br>
-                <input type="checkbox" name="Malmo">Mälmö<br>
-                <input type="checkbox" name="Gothenburg">Göteborg<br>
-                <input type="checkbox" name="Vasteras">Västerås <br>
-                <br>
-
-                <h2>SPORTS</h2>
-                <input type="checkbox"> Football<br>
-                <input type="checkbox"> Basketball<br>
-                <input type="checkbox"> Handball<br>
-                <input type="checkbox"> Volleyball<br>
-                <input type="checkbox"> Tennis<br>
-                <input type="checkbox"> Polo<br>
-                <input type="checkbox"> Floorball<br>
-                <input type="checkbox"> Swimming <br>
-                <br> <br>
-
-                <input type="submit" value="Submit">
-            </form>
-        </div>
         <div class="content-grid">
             <div class="club-panel"></div>
             <div class="club-panel"></div>
@@ -53,10 +53,31 @@
             <div class="club-panel"></div>
             <div class="club-panel"></div>
             <div class="club-panel"></div>
-
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
+            <div class="club-panel"></div>
         </div>
+    <div class = "welcoming">
+        <h1>Catalog</h1>
+        <h3>Here you can browse through our wide database of sport clubs in sweden</h3>
     </div>
-
 
 </body></html>
 

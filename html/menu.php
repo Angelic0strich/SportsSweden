@@ -18,7 +18,7 @@
                 </div> </li>
         </ul>
 </nav>
-
+<body>
 <script>
     $(document).ready(function() {
             $('#search-data').unbind().keyup(function(e) {
@@ -38,7 +38,7 @@
         $('#search-result-container').show();
         $('#search-result-container').html('<div><img src="preloader.gif" width="50px;" height="50px"> <span style="font-size: 20px;">Please Wait...</span></div>');
         $.ajax({
-            url:'search_articles.php',
+            url:'news_search.php',
             method:'get',
             data: {
                 'search-data': val
@@ -50,5 +50,5 @@
     }
 
 </script>
-
+</body>
 </html>

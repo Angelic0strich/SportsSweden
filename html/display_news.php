@@ -1,5 +1,5 @@
 <?php
-$articleId = $_GET['articleid'];
+$articleId = $_GET['articleId'];
 
 $user = 'root';
 $pass = '';

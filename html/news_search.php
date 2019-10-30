@@ -14,7 +14,7 @@ if(isset($_GET["search-data"])) {
 
     $html = "";
     while ($row = $result->fetch_assoc()) {
-        $html = $html . '<div class="search-result"><a href="http://localhost/sportsweden/display_news.php?articleid='. $row["id_news"] . '">' . $row['title'] . '</a></div>';
+        $html = $html . '<div class="search-result"><a href="http://localhost/sportsweden/html/display_news.php?articleId='. $row["id_news"] . '">' . $row['title'] . '</a></div>';
 
     }
     echo $html;

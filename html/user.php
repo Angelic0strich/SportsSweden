@@ -1,9 +1,13 @@
 <?php
 require "load.php";
+
+
+
 session_start();
 if (isset($_POST['logout'])) {
     unset($_SESSION['username']);
     unset($_SESSION['password']);
+    unset($_SESSION['role']);
 
 }
 if (isset($_POST['submit']) && isset($_POST['text'])) {

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/homepage.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+    <script src="../script/jquery-3.2.1.min.js">
+    </script>
 
 </head>
 

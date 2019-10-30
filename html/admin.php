@@ -4,6 +4,8 @@ session_start();
 if (isset($_POST['logout'])) {
     unset($_SESSION['email']);
     unset($_SESSION['password']);
+    unset($_SESSION['role']);
+
 
 }
 if (isset($_POST['submit']) && isset($_POST['text'])) {
@@ -52,12 +54,6 @@ if (isset($_SESSION['email'])) {
 ?>
 <form action="#" method="post">
     <label for='fname'>Name : </label>
-    <input type='text' id='fname' name='text'>
-    <br>
-    <label for='fname'>Sport : </label>
-    <input type='text' id='fname' name='text'>
-    <br>
-    <label for='fname'>City : </label>
     <input type='text' id='fname' name='text'>
     <br>
     <input type='submit' value='Submit' name='submit'>

@@ -46,15 +46,17 @@ a:link
 }
 
 #search-result-container{
+    background-color: white;
+    color: whitesmoke;
+    font-size: 14px;
     position: absolute;
-    background-color: darkblue;
-    bottom: 10px;
-    right: 0px;
-    min-width: 430px;
+    bottom: -175px;
+    right: -40px;
+    min-width: 330px;
 }
 #search-result-container :hover {
     background-color: gray;
 }
 #search-container{
-    position: relative;
+    position: absolute;
 }

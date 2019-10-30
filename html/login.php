@@ -2,9 +2,17 @@
 session_start();
 require "password_check_user.php";
 
+if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+    header("Location: admin.php");
+} else if (isset($_SESSION['role']) && $_SESSION['role'] === 'user') {
+    header("Location: user.php");
+}
+
+
 if (isset($_POST['submit'])) {
     if (check_password($_POST['uname'], $_POST['psw'])) {
         $_SESSION['username'] = $_POST['uname'];
+        $_SESSION['role'] = "user";
         header("Location: user.php");
     } else {
         echo "<h1>Wrong user's username or password</h1>";
@@ -13,19 +21,20 @@ if (isset($_POST['submit'])) {
 ?>
 
 <script>
-<?php
+    <?php
 
-require "password_check_admin.php";
+    require "password_check_admin.php";
 
-if (isset($_POST['submit'])) {
-    if (check_password_admin($_POST['em'], $_POST['psw'])) {
-        $_SESSION['email'] = $_POST['em'];
-        header("Location: admin.php");
-    } else {
-        echo "<h1>Wrong admin's username or password</h1>";
+    if (isset($_POST['submit'])) {
+        if (check_password_admin($_POST['em'], $_POST['psw'])) {
+            $_SESSION['role'] = 'admin';
+            $_SESSION['email'] = $_POST['em'];
+            header("Location: admin.php");
+        } else {
+            echo "<h1>Wrong admin's username or password</h1>";
+        }
     }
-}
-?>
+    ?>
 </script>
 
 <html>
@@ -175,14 +184,15 @@ if (isset($_POST['submit'])) {
 <body>
 
 
-
 <h1>LOGIN PAGE</h1>
 
 
 <div class="container edvin-content">
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In As User</button>
     <button onclick="location.href = 'homepage.php';" style="width:auto;">Home page</button>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edvin" onclick="document.getElementById('edvin').style.display='block'" style="width:auto;">Sign In As Admin</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edvin"
+            onclick="document.getElementById('edvin').style.display='block'" style="width:auto;">Sign In As Admin
+    </button>
 </div>
 
 <div class="modal fade" id="edvin">
@@ -209,7 +219,9 @@ if (isset($_POST['submit'])) {
                 </label>
             </div>
             <div class="modal-footer">
-                <button type="button" onclick="document.getElementById('edvin').style.display='none'" class="cancelbtn"> Close </button>
+                <button type="button" onclick="document.getElementById('edvin').style.display='none'" class="cancelbtn">
+                    Close
+                </button>
                 <span class="psw"><a href="/sportsweden/html/register_admin.php">Register</a></span>
             </div>
 
@@ -231,7 +243,6 @@ if (isset($_POST['submit'])) {
     </form>
 
 </div>
-
 
 
 <div id="id01" class="modal">

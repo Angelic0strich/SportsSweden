@@ -6,9 +6,10 @@
 </head>
 <nav id="menu">
 
-        <ul id = "menu-bar">
-            <li><a href="homepage.php"><img class = "menu-logo" src="../img/Sports-Sweden-full-logo.png"></a></li>
+    <ul id="menu-bar">
+        <li><a href="homepage.php"><img class="menu-logo" src="../img/Sports-Sweden-full-logo.png"></a></li>
 
+<<<<<<< HEAD
             <li><a href="category.php">Catalog</a> </li>
             <li><a href="about-us.php">About us</a></li>
             <li><a href="user.php">Login</a></li>
@@ -16,37 +17,48 @@
                 <div id="search-result-container">
                 </div> </li>
         </ul>
+=======
+        <li><a href="category.php">Catalog</a></li>
+        <li><a href="about-us.php">About us</a></li>
+        <li>Contact</li>
+        <li><a href="login.php">Login</a></li>
+        <li id="search-container"><input id="search-data" type="text" placeholder="Search" />
+            <div id="search-result-container">
+            </div>
+        </li>
+    </ul>
+>>>>>>> search bar fixed
 </nav>
 <body>
 <script>
-    $(document).ready(function() {
-            $('#search-data').unbind().keyup(function(e) {
+    function searchData(val) {
+        $('#search-result-container').show();
+        $('#search-result-container').html('<div><img src="preloader.gif" width="50px;" height="50px"> <span style="font-size: 20px;">Please Wait...</span></div>');
+        $.ajax({
+            url: 'news_search.php',
+            method: 'get',
+            data: {
+                'search-data': val
+            },
+            success: function (data) {
+                $('#search-result-container').html(data)
+            }
+        })
+    }
+
+    $(document).ready(function () {
+            $('#search-data').unbind().keyup(function (e) {
                     var value = $(this).val();
-                    if (value.length>0) {
-                        //alert(99933);
+                    if (value.length > 0) {
                         searchData(value);
-                    }
-                    else {
+                    } else {
                         $('#search-result-container').hide();
                     }
                 }
             );
         }
     );
-    function searchData(val){
-        $('#search-result-container').show();
-        $('#search-result-container').html('<div><img src="preloader.gif" width="50px;" height="50px"> <span style="font-size: 20px;">Please Wait...</span></div>');
-        $.ajax({
-            url:'news_search.php',
-            method:'get',
-            data: {
-                'search-data': val
-            },
-            success: function (data){
-                $('#search-result-container').html(data)
-            }
-        })
-    }
+
 
 </script>
 </body>

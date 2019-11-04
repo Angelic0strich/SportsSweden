@@ -18,7 +18,7 @@
         {
             die('Connection failed');
         }
-        $query = "SELECT id, headline, time FROM news ORDER BY time DESC";
+        $query = "SELECT id_news, title FROM news ORDER BY id_news DESC";
         $result = @mysqli_query($conn, $query);
         if(!$result)
         {
@@ -30,11 +30,11 @@
             {
                 ?>
                     <span style="font-size: 1.5em; ">
-                        <b><?php echo $row->headline; ?></b>
-                        <i><?php echo $row->time; ?></i>
+                        <b><?php echo $row->title; ?></b>
+                        <!-- <i><?php// echo $row->time; ?></i> -->
                     </span><br>
 
-                    <a href="editnews.php?a=edit&id=<?php echo $row->id; ?>">edit</a><br>
+                    <a href="editnews.php?a=edit&id=<?php echo $row->id_news; ?>">edit</a><br>
                 <?php
             }
         }
@@ -48,7 +48,7 @@
                 die('Connection failed');
             }
             $id = $_GET["id"];
-            $query = "SELECT headline, story FROM news WHERE id ='$id'";
+            $query = "SELECT title, content FROM news WHERE id_news ='$id'";
             $result = mysqli_query($conn, $query);
             if(!$result)
             {
@@ -60,11 +60,11 @@
             <table width="50%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td>Headline</td>
-                    <td><input name="headline" type="text" id="headline" value="<?php echo($row->headline) ?>"></td>
+                    <td><input name="title" type="text" id="title" value="<?php echo($row->title) ?>"></td>
                 </tr>
                 <tr>
                     <td>News Story</td>
-                    <td><textarea name="story" id="story"><?php echo($row->story) ?></textarea></td>
+                    <td><textarea name="content" id="content"><?php echo($row->content) ?></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2"><div align="center">
@@ -79,10 +79,10 @@
         else
         {
             $conn = new mysqli('localhost', $username, $password, $servername);
-            $headline = $_POST['headline'];
-            $story = $_POST['story'];
+            $title = $_POST['title'];
+            $content = $_POST['content'];
             $id = $_GET["id"];
-            $query = "UPDATE news SET headline = '".$headline."', story = '".$story."', time = current_timestamp() WHERE id = '".$id."'";
+            $query = "UPDATE news SET title = '".$title."', content = '".$content."' WHERE id_news = '".$id."'";
             $result = mysqli_query($conn, $query);
             if(!$result)
             {

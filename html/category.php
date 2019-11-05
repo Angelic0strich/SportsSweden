@@ -1,3 +1,8 @@
+<?php
+require ("get_database_clubs.php");
+$clubs = get_clubs();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,9 +46,11 @@
                 </div>
             </div>
     </div>
-
+        <!-- Content of the site -->
         <div class="content-grid">
-            <div class="club-panel"></div>
+            <div class="club-panel">
+                <img src="">
+            </div>
             <div class="club-panel"></div>
             <div class="club-panel"></div>
             <div class="club-panel"></div>

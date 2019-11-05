@@ -63,6 +63,8 @@
     <div class="submit">
         <input type="submit" id="submit">
     </div>
+    <br>
+    <a href="addnews.php"> Back </a>
 
 
 </form>

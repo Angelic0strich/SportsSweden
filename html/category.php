@@ -87,7 +87,8 @@ $clubs = get_clubs();
         <h1>Catalog</h1>
         <h3>Here you can browse through our wide database of sport clubs in sweden</h3>
     </div>
-
-</body></html>
+    <?php include ("footer.php")?>
+</body>
+</html>
 
 

@@ -3,7 +3,6 @@
 <head>
     <title>Footer</title>
     <meta charset="UTF-8">
-    <a name="top"></a>
     <style>
         footer {
             display: block;

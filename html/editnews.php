@@ -114,8 +114,11 @@
 
                 <input name="hiddenField" type="hidden" value="update">
                 <input name="update" type="submit" id="update" value="Update">
+
+
             </form>
         </div>
+
         <?php
         }
         else
@@ -157,6 +160,8 @@
     }
     mysqli_close($conn);
 ?>
+<a href="addnews.php"> Back </a>
 <?php include ("footer.php")?>
+
 </body>
 </html>

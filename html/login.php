@@ -2,12 +2,11 @@
 session_start();
 require "password_check_user.php";
 
-if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
-    header("Location: admin.php");
-} else if (isset($_SESSION['role']) && $_SESSION['role'] === 'user') {
+if (isset($_SESSION['role']) && $_SESSION['role'] === 'user') {
     header("Location: user.php");
+} else if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+    header("Location: addnews.php");
 }
-
 
 if (isset($_POST['submit'])) {
     if (check_password($_POST['uname'], $_POST['psw'])) {
@@ -18,24 +17,30 @@ if (isset($_POST['submit'])) {
         echo "<h1>Wrong user's username or password</h1>";
     }
 }
-?>
 
+
+?>
 <script>
     <?php
-
     require "password_check_admin.php";
 
     if (isset($_POST['submit'])) {
         if (check_password_admin($_POST['em'], $_POST['psw'])) {
             $_SESSION['role'] = 'admin';
             $_SESSION['email'] = $_POST['em'];
-            header("Location: admin.php");
+            header("Location: addnews.php");
         } else {
             echo "<h1>Wrong admin's email or password</h1>";
         }
     }
     ?>
 </script>
+
+
+
+
+
+
 
 <html>
 <head>
@@ -219,22 +224,10 @@ if (isset($_POST['submit'])) {
 
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" onclick="document.getElementById('edvin').style.display='none'" class="cancelbtn">
-                    Close
+                    Cancel
                 </button>
                 <span class="psw"><a href="/sportsweden/html/register_admin.php">Register</a></span>
 
-
-        <script>
-            // Get the modal
-            var modal = document.getElementById('edvin');
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
         </div>
     </form>
 </div>
@@ -269,18 +262,6 @@ if (isset($_POST['submit'])) {
 
             <span class="psw"><a href="/sportsweden/html/register_user.php">Register</a></span>
 
-            <script>
-                // Get the modal
-                var modal = document.getElementById('id01');
-
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function (event) {
-                    if (event.target === modal) {
-                        modal.style.display = "none";
-                    }
-                }
-
-            </script>
         </div>
     </form>
 </div>

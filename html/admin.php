@@ -53,10 +53,17 @@ if (isset($_SESSION['email'])) {
 
 ?>
 <form action="#" method="post">
-    <label for='fname'>Name : </label>
+    <label for='fname'>Club Information : </label>
     <input type='text' id='fname' name='text'>
     <br>
     <input type='submit' value='Submit' name='submit'>
+    <br>
+    <label for='fname'>Club Articles : </label>
+    <input type='text' id='fname' name='text'>
+    <br>
+    <input type='submit' value='Submit' name='submit'>
+    <br>
+    <br>
     <input type='submit' value='Log out' name='logout'>"
 </form>
 </body>

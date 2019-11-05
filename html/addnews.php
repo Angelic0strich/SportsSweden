@@ -1,3 +1,24 @@
+<?php
+require "load.php";
+session_start();
+if (isset($_POST['logout'])) {
+    unset($_SESSION['email']);
+    unset($_SESSION['password']);
+    unset($_SESSION['role']);
+
+
+}
+if (isset($_POST['submit']) && isset($_POST['text'])) {
+// read text file with name
+// insert into data base
+    $_SESSION['newsfile'] = $_POST['text'];
+    load_articles($_POST['text']);
+    header("Location: homepage.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,6 +88,14 @@
         }
         else {
     ?>
+            <?php
+            if (isset($_SESSION['email'])) {
+
+            } else {
+                header("Location: login.php");
+            }
+
+            ?>
             <div class="container">
                 <form name="addform" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
                         <label for="headline">Headline</label>
@@ -80,6 +109,12 @@
 
                         <input name="hiddenField" type="hidden" value="add_n">
                         <input name="add" type="submit" id="add" value="Submit">
+
+                    <input type='submit' value='Log out' name='logout'>
+                    <a href="editnews.php"> Edit News </a>
+
+                    <br>
+                    <a href="homepage.php"> Main Page </a>
                 </form>
             </div>
         <?php } ?>

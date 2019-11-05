@@ -83,5 +83,6 @@
                 </form>
             </div>
         <?php } ?>
+<?php include ("footer.php")?>
 </body>
 </html>

@@ -1,7 +1,7 @@
 body
 {
-    background-color: darkcyan;
-    color: dodgerblue;
+    background-color: white;
+    color: #00c2e5;
 
 }
 .content
@@ -9,7 +9,16 @@ body
     display: block;
     width: 70em;
     margin: 0 auto;
-    background-color: #bdfbe7;
+    background-color: #f4f4f4;
     text-align: center;
     font-family: "Fjalla One", sans-serif;
+}
+img
+{
+    max-width: 70%;
+}
+.mapouter
+{
+    display: block;
+    margin : 0 auto;
 }

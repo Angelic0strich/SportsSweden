@@ -1,6 +1,8 @@
 <?php
+/*
 require ("get_database_clubs.php");
 $clubs = get_clubs();
+*/
 ?>
 
 <!DOCTYPE html>

@@ -47,11 +47,13 @@ if (isset($_POST['submit'])) {
     <title>Log In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../img/Sports-Sweden-crop-logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
+            font-family: "Patua One", sans-serif;
+            background-color: white;
+            color: #00c2e5;
         }
 
         /* Full-width input fields */
@@ -68,7 +70,9 @@ if (isset($_POST['submit'])) {
 
         /* Set a style for all buttons */
         button {
-            background-color: #4CAF50;
+            font-family: "Fjalla One", "Arial Black";
+            font-size: 20px;
+            background-color: #00c2e5;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;

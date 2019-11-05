@@ -74,3 +74,7 @@ div.filter-bar
      text-align: center;
      font-family: "Fjalla One", sans-serif;
  }
+img
+{
+    width: 100%;
+}

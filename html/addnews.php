@@ -111,9 +111,11 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
                         <input name="add" type="submit" id="add" value="Submit">
 
                     <input type='submit' value='Log out' name='logout'>
+                    |
+                    <a href="form-club.php"> Create Club </a>
+                    |
                     <a href="editnews.php"> Edit News </a>
-
-                    <br>
+                    |
                     <a href="homepage.php"> Main Page </a>
                 </form>
             </div>

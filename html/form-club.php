@@ -21,14 +21,14 @@
     <div>
         <label for="sport">Sport :</label>
         <select name = "sport" id ="sport">
-            <option value="football">Football</option>
+            <option value="athletics">Athletics</option>
+            <option value="baseball">Baseball</option>
             <option value="basketball">Basketball</option>
-            <option value="volleyball">Volleyball</option>
-            <option value="tennis">Tennis</option>
-            <option value="polo">Polo</option>
             <option value="floorball">Floorball</option>
-            <option value="swimming">Swimming</option>
-
+            <option value="football">Football</option>
+            <option value="handball">Handball</option>
+            <option value="hockey">Hockey</option>
+            <option value="volleyball">Volleyball</option>
         </select>
     </div>
     <div>

@@ -1,0 +1,31 @@
+img
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+h1
+{
+    font-family: "Fjalla One", "Arial Black";
+    font-size:  80px;
+    color: #00c2e5;
+}
+h2
+{
+    font-family: "Fjalla One", "Arial Black";
+    font-size: 40px;
+}
+p
+{
+    font-family: "Fjalla One", "Arial Black";
+    font-size : 30px;
+    text-align: center;
+}
+.website
+{
+    font-family: "Fjalla One", "Arial Black";
+    font-size : 30px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}

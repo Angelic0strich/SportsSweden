@@ -15,6 +15,7 @@
 
 require ("get_database_clubs.php");
 $clubs = get_clubs();
+
 ?>
 <body>
 
@@ -47,41 +48,38 @@ $clubs = get_clubs();
     </div>
         <!-- Content of the site -->
         <div class="content-grid">
-            <div class="club-panel">
+            <?php
+            $servername = 'sportsweden';
+            $username = 'root';
+            $password = '';
+            $conn = new mysqli('localhost', $username, $password, $servername);
+            if (!$conn) {
+                die('Connection failed');
+            }
+            $query = "SELECT * FROM clubs ORDER BY id DESC ";
+            $result = @mysqli_query($conn, $query);
 
-            </div>
-            <div class="club-panel">
+            if(!$result)
+            {
+                echo("Fail to get result");
+            }
+            else
+            {
+                while($row = mysqli_fetch_object($result)) {
+                    //echo $row->name;
+                    ?>
+                    <a href="showclub.php?id=<?php echo $row->id;?>">
+                        <div class="club-panel">
+                            <img src="<?php echo $row->logo;?>">
+                            <h1><?php echo $row->name; ?></h1>
+                        </div>
+                    </a>
 
+            <?php
+                }
+            }
+            ?>
 
-            </div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
-            <div class="club-panel"></div>
         </div>
     <div class = "welcoming">
         <h1>Catalog</h1>

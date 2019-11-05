@@ -38,7 +38,11 @@
         $row = mysqli_fetch_object($result); ?>
 
         <div class="container">
-            <h2 style="text-align: center"><?php echo $row->title ?></h2>
+            <tr>
+                <td><img src=""></td> <!-- add source to club logo -->
+                <td><h2 style="text-align: center"><?php echo $row->title ?></h2>
+                </td>
+            </tr>
             <img src="<?php echo $row->imgurl ?>" style="display: block; margin: 0 auto; max-width: 100%;">
             <p><?php echo $row->content ?></p>
         </div>

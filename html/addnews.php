@@ -1,6 +1,3 @@
-
-<!-- Works, but still looks ugly -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,15 +50,10 @@
             {
                 die('Connection failed');
             }
-            /*$dbname = 'sportsweden';
-            $db = @mysqli_select_db();
-            if (!$db)
-            {
-                die('Error selecting database');
-            }*/
             $headline = $_POST['headline'];
             $story = $_POST['story'];
-            $query = "INSERT INTO news(id_news, title, content) VALUES(NULL, '".$headline."', '".$story."');"; // Need to add ID or name or club of who created the news!!
+            $imgurl = $_POST['imgurl'];
+            $query = "INSERT INTO news(id_news, title, content, imgurl) VALUES(NULL, '".$headline."', '".$story."', '".$imgurl."');"; // Need to add ID or name or club of who created the news!!
             $result = @mysqli_query($conn, $query);
             if (!$result)
             {
@@ -82,6 +74,9 @@
 
                         <label for="story">News</label>
                         <textarea id="story" name="story" placeholder="Write your story here..." style="height: 200px"></textarea>
+
+                        <label for="imgurl">Image</label>
+                        <input type="text" id="imgurl" name="imgurl" placeholder="URL">
 
                         <input name="hiddenField" type="hidden" value="add_n">
                         <input name="add" type="submit" id="add" value="Submit">

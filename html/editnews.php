@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Add News</title>
+    <title>Edit News</title>
     <meta charset="UTF-8">
     <style>
         .button {
@@ -93,7 +93,7 @@
                 die('Connection failed');
             }
             $id = $_GET["id"];
-            $query = "SELECT title, content FROM news WHERE id_news ='$id'";
+            $query = "SELECT title, content, imgurl FROM news WHERE id_news ='$id'";
             $result = mysqli_query($conn, $query);
             if(!$result)
             {
@@ -104,10 +104,13 @@
         <div class="container">
             <form name="form1" method="post" action="editnews.php?a=edit&id=<?php echo($id) ?>&update=1">
                 <label for="title">Headline</label>
-                <input type="text" id="title" name="title" value="<?php echo($row->title) ?>">
+                <input type="text" id="title" name="title" value="<?php echo $row->title ?>">
 
                 <label for="content">News</label>
-                <textarea id="content" name="content" style="height: 200px"><?php echo($row->content) ?></textarea>
+                <textarea id="content" name="content" style="height: 200px"><?php echo $row->content ?></textarea>
+
+                <label for="imgurl">Image</label>
+                <input type="text" id="imgurl" name="imgurl" value="<?php echo $row->imgurl ?>">
 
                 <input name="hiddenField" type="hidden" value="update">
                 <input name="update" type="submit" id="update" value="Update">

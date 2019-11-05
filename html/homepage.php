@@ -50,14 +50,14 @@
         <div class="box">
             <img src="../img/image_2.jpg">
             <span class="content">
-					floorball team are ready to world cup
+					Floorball team are ready to world cup
 				</span>
         </div>
         <div class="box" id="box2">
             &nbsp;
             <img src="../img/hoki.jpg">
             <span class="content">
-					Sweden team prepareing for world cup
+					Sweden team preparing for world cup
 				</span>
         </div>
         <div class="box">

@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['email'] = $_POST['em'];
             header("Location: admin.php");
         } else {
-            echo "<h1>Wrong admin's username or password</h1>";
+            echo "<h1>Wrong admin's email or password</h1>";
         }
     }
     ?>
@@ -190,17 +190,15 @@ if (isset($_POST['submit'])) {
 <div class="container edvin-content">
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In As User</button>
     <button onclick="location.href = 'homepage.php';" style="width:auto;">Home page</button>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edvin"
-            onclick="document.getElementById('edvin').style.display='block'" style="width:auto;">Sign In As Admin
-    </button>
+    <button onclick="document.getElementById('edvin').style.display='block'" style="width:auto;">Sign In As Admin</button>
 </div>
 
-<div class="modal fade" id="edvin">
-    <form class="modal-content animate" method="post" action='#'>
-        <div class="modal-dialog">
-            <div class="modal-header">
+<div id="edvin" class="modal">
+
+        <form class="modal-content animate" method="post" action='#'>
+
                 <h1>Admin</h1>
-            </div>
+
             <div class="imgcontainer">
             <span onclick="document.getElementById('edvin').style.display='none'" class="close"
                   title="Close Box">&times;</span>
@@ -218,30 +216,27 @@ if (isset($_POST['submit'])) {
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
             </div>
-            <div class="modal-footer">
+
+            <div class="container" style="background-color:#f1f1f1">
                 <button type="button" onclick="document.getElementById('edvin').style.display='none'" class="cancelbtn">
                     Close
                 </button>
                 <span class="psw"><a href="/sportsweden/html/register_admin.php">Register</a></span>
-            </div>
 
 
-            <script>
-                // Get the modal
-                var modal = document.getElementById('edvin');
+        <script>
+            // Get the modal
+            var modal = document.getElementById('edvin');
 
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function (event) {
-                    if (event.target === modal) {
-                        modal.style.display = "none";
-                    }
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
                 }
-            </script>
-
+            }
+        </script>
         </div>
-
     </form>
-
 </div>
 
 
@@ -286,7 +281,7 @@ if (isset($_POST['submit'])) {
                 }
 
             </script>
-
+        </div>
     </form>
 </div>
 

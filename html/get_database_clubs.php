@@ -32,8 +32,5 @@ function get_clubs()
 
         }
     }
-
 }
-
-
 ?>

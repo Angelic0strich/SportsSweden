@@ -88,8 +88,4 @@ $clubs = get_clubs();
 
 </body></html>
 
-</div>
 
-
-</body>
-</html>

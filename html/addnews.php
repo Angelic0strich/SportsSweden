@@ -6,6 +6,37 @@
 <head>
     <title>Add News</title>
     <meta charset="UTF-8">
+    <style>
+        input[type=text], textarea {
+            width: 100%;
+            padding 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        .container {
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            /*background-color: #f2f2f2;*/
+            padding 20px;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
 
@@ -30,7 +61,7 @@
             }*/
             $headline = $_POST['headline'];
             $story = $_POST['story'];
-            $query = "INSERT INTO news(id, headline, story, time) VALUES(NULL, '".$headline."', '".$story."', current_timestamp());"; // Need to add ID or name or club of who created the news!!
+            $query = "INSERT INTO news(id_news, title, content) VALUES(NULL, '".$headline."', '".$story."');"; // Need to add ID or name or club of who created the news!!
             $result = @mysqli_query($conn, $query);
             if (!$result)
             {
@@ -44,24 +75,18 @@
         }
         else {
     ?>
-            <form name="addform" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
-            <table width="50%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <td width="50%">Headline</td>
-                        <td><input name="headline" type="text" id="headline"></td>
-                    </tr>
-                    <tr>
-                        <td>News</td>
-                        <td><textarea name="story" id="story"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div align="right">
-                                <input name="hiddenField" type="hidden" value="add_n">
-                                <input name="add" type="submit" id="add" value="Submit">
-                            </div></td>
-                    </tr>
-                </table>
-            </form>
+            <div class="container">
+                <form name="addform" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
+                        <label for="headline">Headline</label>
+                        <input type="text" id="headline" name="headline" placeholder="Your headline...">
+
+                        <label for="story">News</label>
+                        <textarea id="story" name="story" placeholder="Write your story here..." style="height: 200px"></textarea>
+
+                        <input name="hiddenField" type="hidden" value="add_n">
+                        <input name="add" type="submit" id="add" value="Submit">
+                </form>
+            </div>
         <?php } ?>
 </body>
 </html>

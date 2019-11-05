@@ -3,6 +3,49 @@
 <head>
     <title>Add News</title>
     <meta charset="UTF-8">
+    <style>
+        .button {
+            background-color: darkgray;
+            border: none;
+            color: white;
+            padding: 10px 17px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        input[type=text], textarea {
+            width: 100%;
+            padding 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        .container {
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            /*background-color: #f2f2f2;*/
+            padding 20px;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
 <?php include ("menu.php")?>
@@ -29,12 +72,14 @@
             while($row = mysqli_fetch_object($result))
             {
                 ?>
+                <a href="editnews.php?a=edit&id=<?php echo $row->id_news; ?>" class="button">Edit</a>
+                <a href="editnews.php?a=delete&id=<?php echo $row->id_news; ?>" class="button">Delete</a>
                     <span style="font-size: 1.5em; ">
                         <b><?php echo $row->title; ?></b>
                         <!-- <i><?php// echo $row->time; ?></i> -->
-                    </span><br>
-
-                    <a href="editnews.php?a=edit&id=<?php echo $row->id_news; ?>">edit</a><br>
+                    </span>
+                <br>
+                <br>
                 <?php
             }
         }
@@ -56,29 +101,22 @@
             }
             $row = mysqli_fetch_object($result);
         ?>
-        <form name="form1" method="post" action="editnews.php?a=edit&id=<?php echo($id) ?>&update=1">
-            <table width="50%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                    <td>Headline</td>
-                    <td><input name="title" type="text" id="title" value="<?php echo($row->title) ?>"></td>
-                </tr>
-                <tr>
-                    <td>News Story</td>
-                    <td><textarea name="content" id="content"><?php echo($row->content) ?></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><div align="center">
-                            <input name="hiddenField" type="hidden" value="update">
-                            <input name="update" type="submit" id="update" value="Update">
-                        </div></td>
-                </tr>
-            </table>
-        </form>
+        <div class="container">
+            <form name="form1" method="post" action="editnews.php?a=edit&id=<?php echo($id) ?>&update=1">
+                <label for="title">Headline</label>
+                <input type="text" id="title" name="title" value="<?php echo($row->title) ?>">
+
+                <label for="content">News</label>
+                <textarea id="content" name="content" style="height: 200px"><?php echo($row->content) ?></textarea>
+
+                <input name="hiddenField" type="hidden" value="update">
+                <input name="update" type="submit" id="update" value="Update">
+            </form>
+        </div>
         <?php
         }
         else
         {
-            $conn = new mysqli('localhost', $username, $password, $servername);
             $title = $_POST['title'];
             $content = $_POST['content'];
             $id = $_GET["id"];
@@ -92,6 +130,20 @@
             {
                 echo('Successfully updated news!');
             }
+        }
+    }
+    elseif($_GET["a"]=='delete')
+    {
+        $id = $_GET["id"];
+        $query = "DELETE FROM news WHERE id_news = '".$id."'";
+        $result = mysqli_query($conn, $query);
+        if(!$result)
+        {
+            die('Error deleting news.');
+        }
+        else
+        {
+            echo('Successfully deleted news!');
         }
     }
     else

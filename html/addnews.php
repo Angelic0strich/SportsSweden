@@ -96,6 +96,12 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
             ?>
             <div class="container">
                 <form name="addform" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
+                    <br>
+                    <a href="form-club.php"> Create Club </a>
+                    |
+                    <a href="editnews.php"> Edit News </a>
+                    <br>
+                    <br>
                         <label for="headline">Headline</label>
                         <input type="text" id="headline" name="headline" placeholder="Your headline...">
 
@@ -109,12 +115,6 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
                         <input name="add" type="submit" id="add" value="Submit">
 
                     <input type='submit' value='Log out' name='logout'>
-                    |
-                    <a href="form-club.php"> Create Club </a>
-                    |
-                    <a href="editnews.php"> Edit News </a>
-                    |
-                    <a href="homepage.php"> Main Page </a>
                 </form>
             </div>
         <?php } ?>

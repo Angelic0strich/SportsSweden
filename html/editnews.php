@@ -83,6 +83,10 @@
                 <?php
             }
         }
+        else
+        {
+            echo('There is no news.');
+        }
     }
     elseif($_GET["a"]=='edit')
     {

@@ -43,7 +43,7 @@
             <div class="grid-container">
                 <div class="item1">
                     <a href="shownews.php?id=<?php echo $row->id_news ?>">
-                        <img src="https://previews.123rf.com/images/duug/duug1206/duug120600003/13966994-sport-logo.jpg" style="height: 100%;">
+                        <img src="https://previews.123rf.com/images/duug/duug1206/duug120600003/13966994-sport-logo.jpg" style="height: 6em;">
                     </a>
                 </div>
                 <div class="item2">
@@ -52,13 +52,6 @@
                     </a>
                 </div>
             </div>
-            <!--
-            <a href="shownews.php?id=<?php// echo $row->id_news ?>">
-                <div class="newsfeed">
-                    <img src="https://previews.123rf.com/images/duug/duug1206/duug120600003/13966994-sport-logo.jpg">
-                    <?php// echo $row->title ?>
-                </div>
-            </a>-->
             <?php
         }
         ?> <br> <?php

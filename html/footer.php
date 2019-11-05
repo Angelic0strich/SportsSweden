@@ -14,19 +14,19 @@
             color: darkgray;
             text-align: center;
         }
-        a:link {
+        footer a:link {
             display: inline-block;
             color: darkgray;
             cursor: pointer;
             text-decoration: none;
         }
-        a:hover {
+        footer a:hover {
             display: inline-block;
             color: darkgray;
             cursor: pointer;
             text-decoration: none;
         }
-        a:visited {
+        footer a:visited {
             display: inline-block;
             color: darkgray;
             cursor: pointer;

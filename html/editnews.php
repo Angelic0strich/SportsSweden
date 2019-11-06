@@ -3,7 +3,14 @@
 <head>
     <title>Edit News</title>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <style>
+        body
+        {
+            font-family: "Fjalla One", "Arial Black";
+            font-size: 25px;
+        }
         .button {
             background-color: darkgray;
             border: none;

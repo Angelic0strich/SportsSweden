@@ -24,6 +24,8 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
 <head>
     <title>Add News</title>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <style>
         input[type=text], textarea {
             width: 100%;
@@ -36,7 +38,7 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
             resize: vertical;
         }
         input[type=submit] {
-            background-color: #4CAF50;
+            background-color: #00c2e5;
             color: white;
             padding: 12px 20px;
             border: none;
@@ -44,7 +46,7 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
             cursor: pointer;
         }
         input[type=submit]:hover {
-            background-color: #45a049;
+            background-color: #00c2e5;
         }
         .container {
             display: block;
@@ -53,6 +55,11 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
             /*background-color: #f2f2f2;*/
             padding 20px;
             width: 50%;
+        }
+        form
+        {
+            font-family: "Fjalla One", "Arial Black";
+            font-size: 20px;
         }
     </style>
 </head>

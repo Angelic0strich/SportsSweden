@@ -25,24 +25,24 @@ $clubs = get_clubs();
     <div class="filter-bar">
             <div class="dropdown" id="button-left">
                 <button class="dropbtn">Search by city</button>
-                <div class="dropdown-content" >
-                    <a href="#">Stockholm</a>
-                    <a href="#">Mälmö</a>
-                    <a href="#">Göteborg</a>
-                    <a href="#">Västerås</a>
+                <div class="dropdown-content">
+                    <a href="category.php?city=stockholm">Stockholm</a>
+                    <a href="category.php?city=mälmö">Mälmö</a>
+                    <a href="category.php?city=göteborg">Göteborg</a>
+                    <a href="category.php?city=västerås">Västerås</a>
                 </div>
             </div>
 
             <div class="dropdown" id="button-right">
                 <button class="dropbtn">Search by sport</button>
                 <div class="dropdown-content">
-                    <a href="#">Football</a>
-                    <a href="#">Basketball</a>
-                    <a href="#">Volleyball</a>
-                    <a href="#">Tennis</a>
-                    <a href="#">Polo</a>
-                    <a href="#">Floorball</a>
-                    <a href="#">Swimming</a>
+                    <a href="category.php?sport=football">Football</a>
+                    <a href="category.php?sport=basketball">Basketball</a>
+                    <a href="category.php?sport=volleyball">Volleyball</a>
+                    <a href="category.php?sport=tennis">Tennis</a>
+                    <a href="category.php?sport=polo">Polo</a>
+                    <a href="category.php?sport=floorball">Floorball</a>
+                    <a href="category.php?sport=swimming">Swimming</a>
                 </div>
             </div>
     </div>
@@ -56,7 +56,27 @@ $clubs = get_clubs();
             if (!$conn) {
                 die('Connection failed');
             }
+
             $query = "SELECT * FROM clubs ORDER BY id DESC ";
+
+            if(isset($_GET['city'])){
+                $_SESSION['city'] = $_GET['city'];
+            }
+            if(isset($_GET['sport'])){
+                $_SESSION['sport'] = $_GET['sport'];
+            }
+
+            if(isset($_SESSION['city']) && isset($_SESSION['sport'])){
+                $query = "SELECT * FROM clubs WHERE sport='{$_SESSION['sport']}' AND city='{$_SESSION['city']}' ORDER BY id DESC ";
+            }else if(isset($_SESSION['city'])){
+                $query = "SELECT * FROM clubs WHERE city='{$_SESSION['city']}' ORDER BY id DESC ";
+            }else if(isset($_SESSION['sport'])){
+                $query = "SELECT * FROM clubs WHERE sport='{$_SESSION['sport']}' ORDER BY id DESC ";
+
+            }
+
+
+
             $result = @mysqli_query($conn, $query);
 
             if(!$result)
@@ -86,6 +106,7 @@ $clubs = get_clubs();
         <h3>Here you can browse through our wide database of sport clubs in sweden</h3>
     </div>
     <?php include ("footer.php")?>
+</div>
 </body>
 </html>
 

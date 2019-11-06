@@ -56,7 +56,7 @@ else
         <br>
         <div class="mapouter" style="display: block; margin: 0 auto; max-width: 100%;"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="<?php echo $row-> googlemaps; ?>" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/fiverr-promo-code/">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
         <br>
-        <a class="website" href="<?php echo $row->website;?>">Go to website</a>
+        <a class="website" href="<?php echo $row->website;?>">Interested ? Go to their website !</a>
         <br>
     </div>
 

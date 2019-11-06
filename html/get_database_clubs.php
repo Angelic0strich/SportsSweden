@@ -18,10 +18,10 @@ function get_clubs()
     }
     else
     {
-        echo "It works here";
+        //echo "It works here";
         while($row = mysqli_fetch_object($result)) {
             //echo $row['title'];
-            echo "hello";
+            //echo "hello";
 
             $tempclub = array
             (

@@ -6,15 +6,16 @@
 </head>
 <nav id="menu">
 
-    <ul id="menu-bar">
-        <li><a href="homepage.php"><img class="menu-logo" src="../img/Sports-Sweden-full-logo.png"></a></li>
-            <li><a href="category.php">Catalog</a> </li>
-            <li><a href="about-us.php">About us</a></li>
-            <li><a href="user.php">Login</a></li>
-            <li id="search-container"><input id="search-data" type="text" placeholder="Search"/>
-                <div id="search-result-container">
-                </div> </li>
-        </ul>
+    <div id="menu-bar">
+        <div class="login"><a href="user.php">Login</a></div>
+        <div id="search-container"><input id="search-data" type="text" placeholder="Search"/>
+            <div id="search-result-container"></div>
+        </div>
+        <div class="banner"><img id ="banner"src="../img/Sports-Sweden-full-logo.png"></div>
+        <div class="home"><a href="homepage.php"><img id="homepage-icon" src="../img/homepage-icon.png"></a></div>
+        <div class="category"><a href="category.php">Catalog</a> </div>
+        <div class="about-us"><a href="about-us.php">About us</a></div>
+    </div>
 </nav>
 <body>
 <script>

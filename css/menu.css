@@ -1,7 +1,7 @@
-a:link
+a
 {
     text-decoration: none;
-    text-decoration-color: white;
+    color: black;
 }
 #menu
 {
@@ -11,24 +11,12 @@ a:link
 #menu-bar {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 80px 150px 80px;
+    grid-template-rows: 50px 150px 80px;
     margin: 0 ;
     padding: 0 ;
     list-style: none ;
     text-align: center ;
-    font-size: 60px;
 }
-/*#menu-bar li
-{
-    display: inline ;
-    padding: 10px auto;
-    margin-right: 20px ;
-    /*border: 10px double darkblue;
-    color: #fff ;
-    background: darkblue;
-}
-*/
-
 
 #searchInput{
     background-color:rgba(100,100,100,0.5);
@@ -38,7 +26,7 @@ a:link
 }
 
 #search-data {
-    background-color: rgba(100, 100, 100, 0.5);
+    /*background-color: rgba(100, 100, 100, 0.5);*/
     color: white;
     bottom: 10px;
     padding: 10px;
@@ -63,10 +51,12 @@ a:link
 }
 .login
 {
+
     grid-column:1/4;
     font-size: 30px;
     border-bottom: 1px dashed #cccccc;
 }
+
 .banner
 {
     grid-row: 2;
@@ -91,12 +81,13 @@ a:link
 {
     grid-column: 3/5;
     background-color: #00c2e5;
+    font-size: 60px;
 
 }
 .about-us {
  grid-column: 5/7;
     background-color: #00c2e5;
-
+    font-size: 60px;
 }
 
 

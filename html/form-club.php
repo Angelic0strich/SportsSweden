@@ -12,7 +12,7 @@
 <div class="form">
 
 
-<form method="post" action="add-club.php">
+<form method="post" action="../php/add-club.php">
     <div>
         <label for="name">Name :</label>
         <input type="text" name="name" id="name">

@@ -1,5 +1,5 @@
 <?php
-require "load.php";
+require "../php/load.php";
 
 
 

@@ -1,5 +1,5 @@
 <?php
-include "imports.php";
+include "../php/imports.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

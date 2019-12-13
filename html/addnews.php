@@ -1,5 +1,5 @@
 <?php
-require "load.php";
+require "../php/load.php";
 session_start();
 if (isset($_POST['logout'])) {
     unset($_SESSION['email']);

@@ -8,6 +8,7 @@
 
 <<<<<<< HEAD
     <div id="menu-bar">
+        <!-- LOGIN -->
         <div class="login"><a href="user.php">Login</a></div>
         <div id="search-container"><input id="search-data" type="text" placeholder="Search"/>
             <div id="search-result-container"></div>

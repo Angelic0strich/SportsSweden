@@ -14,3 +14,4 @@ function isUser()
 {
     return isset($_SESSION['role']) && $_SESSION['role'] === 'user';
 }
+//create get user id

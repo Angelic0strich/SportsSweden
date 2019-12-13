@@ -22,32 +22,28 @@ include "imports.php";
     </style>
 </head>
 <body>
-<?php include ("menu.php")?>
+<?php include("menu.php") ?>
 
 <?php
 $servername = 'sportsweden';
 $username = 'root';
 $password = '';
 $conn = new mysqli('localhost', $username, $password, $servername);
-if (!$conn)
-{
+if (!$conn) {
     die('Connection failed');
 }
 $id = $_GET['id'];
-$query = "SELECT * FROM clubs WHERE id = '".$id."'";
+$query = "SELECT * FROM clubs WHERE id = '" . $id . "'";
 $result = @mysqli_query($conn, $query);
-if (!$result)
-{
+if (!$result) {
     die('Error retrieving news from database');
-}
-else
-{
+} else {
     $row = mysqli_fetch_object($result); ?>
 
     <div class="container">
         <tr>
             <br>
-            <td><img class="image" src="<?php echo $row->image;?>" ></td>
+            <td><img class="image" src="<?php echo $row->image; ?>"></td>
             <td><h1 style="text-align: center"><?php echo $row->name ?></h1></td>
             <td><h2 style="text-align: center">Sport : <?php echo $row->sport ?></h2></td>
 
@@ -56,16 +52,36 @@ else
         <br>
 
         <br>
-        <p> Address : <?php echo $row-> address;?></p>
+        <p> Address : <?php echo $row->address; ?></p>
         <br>
-        <div class="mapouter" style="display: block; margin: 0 auto; max-width: 100%;"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="<?php echo $row-> googlemaps; ?>" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/fiverr-promo-code/">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+        <div class="mapouter" style="display: block; margin: 0 auto; max-width: 100%;">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="<?php echo $row->googlemaps; ?>" frameborder="0"
+                        scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://www.embedgooglemap.net/blog/fiverr-promo-code/">embedgooglemap.net</a></div>
+            <style>.mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 600px;
+                }</style>
+        </div>
         <br>
-        <a class="website" href="<?php echo $row->website;?>">Interested ? Go to their website !</a>
-        <?php if(isUserLoggedIn())
-        {
-            echo "<button >Subscribe</button>";
+        <a class="website" href="<?php echo $row->website; ?>">Interested ? Go to their website !</a>
+        <?php
+        if (isUserLoggedIn()) {
+            echo "<a href='subscribe.php?id="
+                . $row -> id
+                . "'>Subscribe</a>";
         }
-            ?>
+        ?>
 
         <br>
 
@@ -73,6 +89,6 @@ else
 
 
 <?php } ?>
-<?php include ("footer.php")?>
+<?php include("footer.php") ?>
 </body>
 </html>

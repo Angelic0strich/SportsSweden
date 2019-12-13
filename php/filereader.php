@@ -3,7 +3,7 @@
 function readnewsfile(){
 
     if(isset($_SESSION['newsfile']) == false){
-         //$_SESSION['newsfile'] = "Ass2News.json"; //WHY
+         $_SESSION['newsfile'] = "Ass2News.json"; //WHY
     }
 
     $text = file_get_contents($_SESSION['newsfile']);

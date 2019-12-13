@@ -6,7 +6,6 @@
 </head>
 <nav id="menu">
 
-<<<<<<< HEAD
     <div id="menu-bar">
         <!-- LOGIN -->
         <div class="login"><a href="user.php">Login</a></div>

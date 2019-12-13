@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once "imports.php";
 require "password_check_user.php";
 require "password_check_admin.php";
 

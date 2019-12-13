@@ -1,5 +1,5 @@
 <?php
-include "imports.php";
+require_once "imports.php";
 
 function check_password($username, $password){
     $db= getDBConnection();

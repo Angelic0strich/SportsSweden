@@ -1,9 +1,8 @@
 <?php
+include "imports.php";
+
 function check_password($username, $password){
-    $user = 'root';
-    $pass = '';
-    $db = 'sportsweden';
-    $db = new mysqli('localhost', $user, $pass, $db) or die ("Unable to connect");
+    $db= getDBConnection();
     $sql = 'SELECT * from user where username="'
         .$username
         .'" and password="'

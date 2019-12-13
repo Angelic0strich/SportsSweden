@@ -63,7 +63,7 @@ else
         <a class="website" href="<?php echo $row->website;?>">Interested ? Go to their website !</a>
         <?php if(isUserLoggedIn())
         {
-            echo "<button>Subscribe</button>";
+            echo "<button >Subscribe</button>";
         }
             ?>
 

@@ -1,5 +1,6 @@
-
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,6 +46,7 @@ $clubs = get_clubs();
                     <a href="category.php?sport=swimming">Swimming</a>
                 </div>
             </div>
+
     </div>
         <!-- Content of the site -->
         <div class="content-grid">
@@ -92,6 +94,14 @@ $clubs = get_clubs();
                         <div class="club-panel">
                             <img src="<?php echo $row->logo;?>">
                             <h1><?php echo $row->name; ?></h1>
+
+                            <?php
+                            if(isset($_SESSION['role'])){
+                                echo '<a href="follow.php?club_id='.$row->id.'>Follow</a>';
+                            }else{
+                                echo 'not logged in ';
+                            }
+                            ?>
                         </div>
                     </a>
 

@@ -1,6 +1,7 @@
 <?php
 session_start();
 require "password_check_user.php";
+require "password_check_admin.php";
 
 if (isset($_SESSION['role']) && $_SESSION['role'] === 'user') {
     header("Location: user.php");
@@ -9,36 +10,19 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'user') {
 }
 
 if (isset($_POST['submit'])) {
-    if (check_password($_POST['uname'], $_POST['psw'])) {
-        $_SESSION['username'] = $_POST['uname'];
+    if (check_password_admin($_POST['em'], $_POST['psw'])) {
+        $_SESSION['role'] = 'admin';
+        $_SESSION['email'] = $_POST['em'];
+        header("Location: addnews.php");
+    } else if (check_password($_POST['uname'], $_POST['psw'])) {
         $_SESSION['role'] = "user";
-        header("Location: user.php");
+        $_SESSION['username'] = $_POST['uname'];
+        header("Location: category.php");
     } else {
-        echo "<h1>Wrong user's username or password</h1>";
+        echo "<h1>Wrong username or password</h1>";
     }
 }
-
-
 ?>
-<script>
-    <?php
-    require "password_check_admin.php";
-
-    if (isset($_POST['submit'])) {
-        if (check_password_admin($_POST['em'], $_POST['psw'])) {
-            $_SESSION['role'] = 'admin';
-            $_SESSION['email'] = $_POST['em'];
-            header("Location: addnews.php");
-        } else {
-            echo "<h1>Wrong admin's email or password</h1>";
-        }
-    }
-    ?>
-</script>
-
-
-
-
 
 
 
@@ -199,38 +183,39 @@ if (isset($_POST['submit'])) {
 <div class="container edvin-content">
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In As User</button>
     <button onclick="location.href = 'homepage.php';" style="width:auto;">Home page</button>
-    <button onclick="document.getElementById('edvin').style.display='block'" style="width:auto;">Sign In As Admin</button>
+    <button onclick="document.getElementById('edvin').style.display='block'" style="width:auto;">Sign In As Admin
+    </button>
 </div>
 
 <div id="edvin" class="modal">
 
-        <form class="modal-content animate" method="post" action='#'>
+    <form class="modal-content animate" method="post" action='#'>
 
-                <h1>Admin</h1>
+        <h1>Admin</h1>
 
-            <div class="imgcontainer">
+        <div class="imgcontainer">
             <span onclick="document.getElementById('edvin').style.display='none'" class="close"
                   title="Close Box">&times;</span>
-                <img src="profile.jpg" alt="Profile" class="profile">
-            </div>
-            <div class="container">
-                <label for="em"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="em" required>
+            <img src="profile.jpg" alt="Profile" class="profile">
+        </div>
+        <div class="container">
+            <label for="em"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="em" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
 
-                <button type="submit" name="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
+            <button type="submit" name="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
 
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('edvin').style.display='none'" class="cancelbtn">
-                    Cancel
-                </button>
-                <span class="psw"><a href="/sportsweden/html/register_admin.php">Register</a></span>
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('edvin').style.display='none'" class="cancelbtn">
+                Cancel
+            </button>
+            <span class="psw"><a href="/sportsweden/html/register_admin.php">Register</a></span>
 
         </div>
     </form>

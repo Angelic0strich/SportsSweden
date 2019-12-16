@@ -22,28 +22,7 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        input[type=submit] {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-decoration: none;
-            margin: 4px 2px;
-            cursor: pointer;
-
-        }
-
-        input[type=text] {
-            width: 50%;
-            padding: 10px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 2px solid black;
-            border-radius: 2px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="../css/user.css">
 </head>
 <body>
 <?php

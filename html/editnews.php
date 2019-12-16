@@ -3,56 +3,9 @@
 <head>
     <title>Edit News</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/editnews.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
-    <style>
-        body
-        {
-            font-family: "Fjalla One", "Arial Black";
-            font-size: 25px;
-        }
-        .button {
-            background-color: darkgray;
-            border: none;
-            color: white;
-            padding: 10px 17px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 20px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-        input[type=text], textarea {
-            width: 100%;
-            padding 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-        }
-        input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-        .container {
-            display: block;
-            margin: 0 auto;
-            border-radius: 5px;
-            /*background-color: #f2f2f2;*/
-            padding 20px;
-            width: 50%;
-        }
-    </style>
 </head>
 <body>
 <?php include ("menu.php")?>

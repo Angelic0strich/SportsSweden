@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Add a new club</title>
     <link rel="icon" type="image/png" href="../img/Sports-Sweden-crop-logo.png">
-    <link rel="stylesheet" href="../css/form-club.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="form-club-body">
 <div class="form">
 
 

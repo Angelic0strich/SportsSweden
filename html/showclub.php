@@ -6,7 +6,7 @@ include "../php/imports.php";
 <head>
     <title>Show Club</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/showclub.css">
+    <link rel="stylesheet" type="text/css" href="../css/mainstyle.css">
     <link rel="icon" href="../img/Sports-Sweden-crop-logo.png">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">

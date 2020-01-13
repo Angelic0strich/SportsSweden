@@ -275,7 +275,7 @@ input[type=submit]:hover {
     padding : 20px;
     width: 50%;
 }
-/* editnews specification */
+/* footer specification */
 footer {
     display: block;
     width: 100%;
@@ -302,4 +302,93 @@ footer a:visited {
     color: darkgray;
     cursor: pointer;
     text-decoration: none;
+}
+/* form-club specification */
+.form-club-body
+{
+    background-color: #cccccc;
+    font-family: "Fjalla One", "Arial Black";
+    font-size: 40px;
+    color: #00c2e5;
+}
+.form
+{
+    background-color: #888888;
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+
+}
+
+input, select{
+    float: right;
+    width: 250px;
+    height: 40px;
+}
+#sport, #city
+{
+    font-family: "Patua One", sans-serif;
+    font-size: 20px;
+}
+.submit
+{
+    text-align: center;
+}
+#submit
+{
+    height: 60px;
+    font-size: 40px;
+}
+/* show-club specification */
+.image, .logo
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+h1
+{
+    font-family: "Fjalla One", "Arial Black";
+    font-size:  80px;
+    color: #00c2e5;
+}
+h2
+{
+    font-family: "Fjalla One", "Arial Black";
+    font-size: 40px;
+}
+p
+{
+    font-family: "Fjalla One", "Arial Black";
+    font-size : 30px;
+    text-align: center;
+}
+.website
+{
+    font-family: "Fjalla One", "Arial Black";
+    font-size : 30px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+/* user specification */
+.user-text {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.user-submit {
+    width: 50%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 2px;
+
 }

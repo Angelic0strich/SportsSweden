@@ -3,17 +3,10 @@
 <head>
     <title>Show News</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 
-    <style>
-        .container {
-            display: block;
-            margin: 0 auto;
-            border-radius: 5px;
-            /*background-color: #f2f2f2;*/
-            padding 20px;
-            width: 50%;
-        }
-    </style>
 </head>
 <body>
 <?php include ("menu.php")?>

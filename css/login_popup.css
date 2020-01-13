@@ -17,6 +17,10 @@ body {
 }
 
 /* Set a style for all buttons */
+#uname, #psw
+{
+    font-family: "Fjalla One", "Arial Black";
+}
 button {
     font-family: "Fjalla One", "Arial Black";
     font-size: 20px;

@@ -15,7 +15,7 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
 // insert into data base
     $_SESSION['newsfile'] = $_POST['text'];
     load_articles($_POST['text']);
-    header("Location: homepage.php");
+    header("Location: index.php");
     exit();
 }
 ?>

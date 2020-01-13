@@ -3,7 +3,7 @@
 <head>
     <title>Footer</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
 
 </head>
 <body>

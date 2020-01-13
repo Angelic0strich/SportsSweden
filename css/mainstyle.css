@@ -275,3 +275,31 @@ input[type=submit]:hover {
     padding : 20px;
     width: 50%;
 }
+/* editnews specification */
+footer {
+    display: block;
+    width: 100%;
+    border-top: 1px solid darkgray;
+    margin-top: 10px;
+    background-color: inherit;
+    color: darkgray;
+    text-align: center;
+}
+footer a:link {
+    display: inline-block;
+    color: darkgray;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer a:hover {
+    display: inline-block;
+    color: darkgray;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer a:visited {
+    display: inline-block;
+    color: darkgray;
+    cursor: pointer;
+    text-decoration: none;
+}

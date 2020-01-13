@@ -63,7 +63,7 @@ div.filter-bar
 
 .content-grid {
     display: grid;
-    /* grid-template-rows: repeat(10, 1fr);*/
+
     grid-template-columns: repeat(3, 1fr);
 }
 .club-panel

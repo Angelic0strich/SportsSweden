@@ -3,5 +3,5 @@ function show_login_popup() {
 }
 
 function hide_login_popup() {
-    document.getElementById('id01').style.display = 'hidden';
+    document.getElementById('id01').style.display = 'none';
 }

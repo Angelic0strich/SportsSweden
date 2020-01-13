@@ -1,23 +1,18 @@
 <div id="id01" class="modal" style="display:none">
     <form class="modal-content animate" method="post" action='#'>
         <h1>User</h1>
-        <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                  title="Close Box">&times;</span>
-            <img src="../img/profile.jpg" alt="Profile" class="profile">
-        </div>
-
         <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="uname" required>
+            <div>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="uname" required>
+            </div>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" id="psw" required>
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="psw" required>
+            </div>
 
             <button type="submit" name="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
         </div>
         <div class="container" style="background-color:#f1f1f1">
             <button type="button" onclick="hide_login_popup()" class="cancelbtn">

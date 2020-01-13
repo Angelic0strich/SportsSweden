@@ -164,18 +164,17 @@ a
     text-align: center ;
 }
 
-#searchInput{
+#menu #searchInput{
     background-color:rgba(100,100,100,0.5);
     color:white;
     border : none ;
     padding: 10px;
 }
 
-#search-data {
+#menu #search-data {
 
     color: white;
     bottom: 10px;
-    padding: 10px;
 }
 
 #search-result-container{
@@ -185,10 +184,10 @@ a
     position: relative;
 
 }
-#search-result-container :hover {
+#menu #search-result-container :hover {
     background-color: gray;
 }
-#search-container{
+#menu #search-container{
     position: relative;
     grid-column: 4/7;
     border-bottom: 1px dashed #cccccc;
@@ -246,7 +245,7 @@ a
     margin: 4px 2px;
     cursor: pointer;
 }
-input[type=text], textarea {
+#editnews input[type=text], textarea {
     width: 100%;
     padding : 12px;
     border: 1px solid #ccc;
@@ -256,7 +255,7 @@ input[type=text], textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
-input[type=submit] {
+#editnews input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -264,10 +263,10 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-input[type=submit]:hover {
+#editnews input[type=submit]:hover {
     background-color: #45a049;
 }
-.edit-news-container {
+#editnews .edit-news-container {
     display: block;
     margin: 0 auto;
     border-radius: 5px;

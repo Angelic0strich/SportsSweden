@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 </head>
 <body>
+<div id="editnews">
 <?php include ("menu.php")?>
 
 <?php
@@ -127,6 +128,6 @@
 ?>
 <a href="addnews.php"> Back </a>
 <?php include ("footer.php")?>
-
+</div>
 </body>
 </html>

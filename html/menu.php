@@ -11,7 +11,7 @@
         <div class="category"><a class ="link" href="category.php">Find a club</a> </div>
         <div class="about-us"><a class ="link" href="about-us.php">About us</a></div>
     </div>
-</nav>
+
 
 <script>
     function searchData(val) {
@@ -44,3 +44,4 @@
 
 
 </script>
+</nav>

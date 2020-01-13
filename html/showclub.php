@@ -1,5 +1,5 @@
 <?php
-include "imports.php";
+include "../php/imports.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,7 +77,7 @@ if (!$result) {
         <a class="website" href="<?php echo $row->website; ?>">Interested ? Go to their website !</a>
         <?php
         if (isUserLoggedIn()) {
-            echo "<a href='subscribe.php?id="
+            echo "<a href='../php/subscribe.php?id="
                 . $row -> id
                 . "'>Subscribe</a>";
         }

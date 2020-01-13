@@ -1,7 +1,7 @@
 <?php
-require_once "imports.php";
-require "password_check_user.php";
-require "password_check_admin.php";
+require_once "../php/imports.php";
+require "../php/password_check_user.php";
+require "../php/password_check_admin.php";
 
 if (isset($_SESSION['role']) && $_SESSION['role'] === 'user') {
     header("Location: user.php");
@@ -196,7 +196,7 @@ if (isset($_POST['submit'])) {
         <div class="imgcontainer">
             <span onclick="document.getElementById('edvin').style.display='none'" class="close"
                   title="Close Box">&times;</span>
-            <img src="profile.jpg" alt="Profile" class="profile">
+            <img src="../img/profile.jpg" alt="Profile" class="profile">
         </div>
         <div class="container">
             <label for="em"><b>Email</b></label>
@@ -229,7 +229,7 @@ if (isset($_POST['submit'])) {
         <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close"
                   title="Close Box">&times;</span>
-            <img src="profile.jpg" alt="Profile" class="profile">
+            <img src="../img/profile.jpg" alt="Profile" class="profile">
         </div>
 
         <div class="container">

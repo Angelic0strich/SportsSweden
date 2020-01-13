@@ -14,7 +14,7 @@ session_start();
 </head>
 <?php
 
-require("get_database_clubs.php");
+require("../php/get_database_clubs.php");
 $clubs = get_clubs();
 
 ?>

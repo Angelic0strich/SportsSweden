@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>About us</title>
     <link rel="icon" type="image/png" href="../img/Sports-Sweden-crop-logo.png">
-    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 
 </head>
 <body>
 <?php include ("menu.php")?>
-<div class = "content">
+<div class = "about-us-content">
     <h1>Who are we ?</h1>
     <p>Sports Sweden has been created by a group of students from <strong>Mälardalen University</strong>. <br>
         Its purpose is to show as much sport clubs in Sweden as possible.

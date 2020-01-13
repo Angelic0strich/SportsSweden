@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Sports Sweden</title>
     <link rel="icon" type="image/png" href="../img/Sports-Sweden-crop-logo.png">
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <script src="../script/jquery-3.2.1.min.js">

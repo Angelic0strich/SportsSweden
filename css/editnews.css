@@ -3,7 +3,7 @@ body
     font-family: "Fjalla One", "Arial Black";
     font-size: 25px;
 }
-.button {
+.edit-news-button {
     background-color: darkgray;
     border: none;
     color: white;
@@ -36,7 +36,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-.container {
+.edit-news-container {
     display: block;
     margin: 0 auto;
     border-radius: 5px;

@@ -3,7 +3,8 @@
 <head>
     <title>Edit News</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/editnews.css">
+    <link rel="icon" type="image/png" href="../img/Sports-Sweden-crop-logo.png">
+    <link rel="stylesheet" href="../css/mainstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 </head>
@@ -32,8 +33,8 @@
             while($row = mysqli_fetch_object($result))
             {
                 ?>
-                <a href="editnews.php?a=edit&id=<?php echo $row->id_news; ?>" class="button">Edit</a>
-                <a href="editnews.php?a=delete&id=<?php echo $row->id_news; ?>" class="button">Delete</a>
+                <a href="editnews.php?a=edit&id=<?php echo $row->id_news; ?>" class="edit-news-button">Edit</a>
+                <a href="editnews.php?a=delete&id=<?php echo $row->id_news; ?>" class="edit-news-button">Delete</a>
                     <span style="font-size: 1.5em; ">
                         <b><?php echo $row->title; ?></b>
                         <!-- <i><?php// echo $row->time; ?></i> -->
@@ -65,7 +66,7 @@
             }
             $row = mysqli_fetch_object($result);
         ?>
-        <div class="container">
+        <div class="edit-news-container">
             <form name="form1" method="post" action="editnews.php?a=edit&id=<?php echo($id) ?>&update=1">
                 <label for="title">Headline</label>
                 <input type="text" id="title" name="title" value="<?php echo $row->title ?>">

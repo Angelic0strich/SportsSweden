@@ -3,6 +3,7 @@
 <head>
     <title>Show News</title>
     <meta charset="UTF-8">
+
     <style>
         .container {
             display: block;

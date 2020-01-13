@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
 </head>
+<body>
 <nav id="menu">
 
     <div id="menu-bar">
@@ -13,12 +14,12 @@
             <div id="search-result-container"></div>
         </div>
         <div class="banner"><img id ="banner"src="../img/Sports-Sweden-full-logo.png"></div>
-        <div class="home"><a href="homepage.php"><img id="homepage-icon" src="../img/homepage-icon.png"></a></div>
-        <div class="category"><a href="category.php">Catalog</a> </div>
-        <div class="about-us"><a href="about-us.php">About us</a></div>
+        <div class="home"><a class ="link" href="homepage.php"><img id="homepage-icon" src="../img/homepage-icon.png"></a></div>
+        <div class="category"><a class ="link" href="category.php">Catalog</a> </div>
+        <div class="about-us"><a class ="link" href="about-us.php">About us</a></div>
     </div>
 </nav>
-<body>
+
 <script>
     function searchData(val) {
         $('#search-result-container').show();

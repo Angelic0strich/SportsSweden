@@ -4,7 +4,7 @@ body
     color: #00c2e5;
 
 }
-.content
+.about-us-content
 {
     display: block;
     width: 70em;
@@ -15,7 +15,7 @@ body
 }
 img
 {
-    max-width: 70%;
+    max-width: 100%;
 }
 .mapouter
 {

@@ -7,7 +7,7 @@ session_start();
     <meta charset="UTF-8">
     <title>Catalog</title>
     <link rel="icon" type="image/png" href="../img/Sports-Sweden-crop-logo.png">
-    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 

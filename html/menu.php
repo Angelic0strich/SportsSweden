@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/mainstyle.css">
-</head>
-<body>
 <nav id="menu">
 
     <div id="menu-bar">
         <!-- LOGIN -->
-        <div class="login"><a href="user.php">Login</a></div>
+        <div class="login" onclick="show_login_popup()"><a href="#">Login</a></div>
         <div id="search-container"><input id="search-data" type="text" placeholder="Search"/>
             <div id="search-result-container"></div>
         </div>
@@ -51,5 +44,3 @@
 
 
 </script>
-</body>
-</html>

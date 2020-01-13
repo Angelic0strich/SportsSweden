@@ -5,14 +5,23 @@
     <title>Sports Sweden</title>
     <link rel="icon" type="image/png" href="../img/Sports-Sweden-crop-logo.png">
     <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel="stylesheet" href="../css/login_popup.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
-    <script src="../script/jquery-3.2.1.min.js">
-    </script>
+
+<!--    OUR SCRIPTS -->
+    <script src="../script/login_popup.js"></script>
+
+<!--    LIBRARIES -->
+    <script src="../script/jquery-3.2.1.min.js"></script>
+
 </head>
 <body>
-<?php include ("menu.php")?>
-    <?php
+
+<?php
+require_once "menu.php";
+require_once "login_popup.html";
+
     $servername = 'sportsweden';
     $username = 'root';
     $password = '';

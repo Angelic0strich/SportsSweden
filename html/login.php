@@ -25,7 +25,6 @@ if (isset($_POST['submit'])) {
 ?>
 
 
-
 <html>
 <head>
     <title>Log In</title>

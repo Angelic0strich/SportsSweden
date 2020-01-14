@@ -175,6 +175,7 @@ a
 
     color: white;
     bottom: 10px;
+    font-family: "Patua One";
 }
 
 #search-result-container{
@@ -372,7 +373,8 @@ p
 }
 /* user specification */
 .user-text {
-    background-color: #4CAF50;
+    font-family: "Fjalla One", "Arial Black";
+    background-color: #00c2e5;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -391,3 +393,39 @@ p
     border-radius: 2px;
 
 }
+/* add news specification */
+#addnews input[type=text], textarea {
+    width: 100%;
+    padding : 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#addnews input[type=submit] {
+    font-family: "Fjalla One", "Arial Black";
+    background-color: #00c2e5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#addnews input[type=submit]:hover {
+    background-color: #00c2e5;
+}
+#addnews form {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding : 20px;
+    width: 50%;
+}
+#addnews form, #headline, #story, #imgurl
+{
+    font-family: "Fjalla One", "Arial Black";
+    font-size: 20px;
+}
+

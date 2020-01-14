@@ -9,11 +9,11 @@ function check_password($username, $password)
         . '" and password="'
         . $password . '"';
     $result = mysqli_query($db, $sql);
-    if (mysqli_num_rows($result) > 0) {
-
-        $result[0];
+    if ($result->num_rows > 0) {
+        return $result;
     } else {
-        return NULL;
+        echo "null";
+        return null;
     }
 }
 

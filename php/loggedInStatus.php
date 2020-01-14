@@ -27,12 +27,17 @@ function setLoginFailed(){
     $_SESSION['login_failed'] = true;
 }
 
-function setLoginSuccess(){
-    unset($_SESSION['login_failed'])
+function setLoginSuccessful(){
+    // unset variable to indicate no problem
+    unset($_SESSION['login_failed']);
 }
 
 function isLoginSuccess(){
-    return $_SESSION['login_result'] === true;
+    if(isset($_SESSION['login_failed'])){
+        return false;
+    }else{
+        return true;
+    }
 }
 
 

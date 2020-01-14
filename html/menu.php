@@ -2,7 +2,13 @@
 
     <div id="menu-bar">
         <!-- LOGIN -->
-        <div class="login" onclick="show_login_popup()"><a href="#">Login</a></div>
+        <?php
+            if(isUserLoggedIn()){
+                echo "<div class='login'><a href=\"#\">".$_SESSION['username']."</a></div>";
+            }else{
+                echo '<div class="login" onclick="show_login_popup()"><a href="#">Login</a></div>';
+            }
+        ?>
         <div id="search-container"><input id="search-data" type="text" placeholder="Search"/>
             <div id="search-result-container"></div>
         </div>

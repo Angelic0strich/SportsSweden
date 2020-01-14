@@ -1,21 +1,20 @@
 <?php
 require_once "imports.php";
 
-function check_password($username, $password){
-    $db= getDBConnection();
+function check_password($username, $password)
+{
+    $db = getDBConnection();
     $sql = 'SELECT * from user where username="'
-        .$username
-        .'" and password="'
-        .$password.'"';
+        . $username
+        . '" and password="'
+        . $password . '"';
     $result = mysqli_query($db, $sql);
-    if(mysqli_num_rows($result)>0){
+    if (mysqli_num_rows($result) > 0) {
 
-        return true;
-    }else{
-
-        return false;
+        $result[0];
+    } else {
+        return NULL;
     }
 }
-?>
 
 

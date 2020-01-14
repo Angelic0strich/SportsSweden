@@ -1,6 +1,14 @@
 <div id="id01" class="modal" style="display:none">
     <form class="modal-content animate" method="post" action='#'>
         <h1>User</h1>
+        <?php
+        if (isLoginSuccess() === false) {
+            echo "<h1> Invalid username or password </h1>";
+            echo "<script> show_login_popup()</script>";
+        }
+        ?>
+
+
         <div id="popup"class="container">
             <div>
                 <label for="uname"><b>Username</b></label>

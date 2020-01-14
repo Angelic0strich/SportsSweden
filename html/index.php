@@ -19,8 +19,9 @@
 <body>
 
 <?php
+require_once "../php/imports.php";
 require_once "menu.php";
-require_once "login_popup.html";
+require_once "login_popup.php";
 
     $servername = 'sportsweden';
     $username = 'root';

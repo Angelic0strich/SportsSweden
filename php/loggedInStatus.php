@@ -28,6 +28,7 @@ function setLoginFailed(){
 }
 
 function setLoginSuccess(){
+    unset($_SESSION['login_failed'])
     unset($_SESSION['login_failed']);
 }
 

@@ -4,10 +4,10 @@
         <!-- LOGIN -->
         <?php
         if(isUserLoggedIn()){
-            echo '<div class="login">Logged in</div>';//echo "<div class='login'><a href=\"#\">".$_SESSION['username']."</a></div>";
+            //echo "<div class='login'><a href=\"#\">".$_SESSION['username']."</a></div>";
+            echo "<div class='logout'>Logout</div>";
         }else{
-            echo '<div class="login">Login</div>';
-            //echo '<div class="login" onclick="show_login_popup()"><a href="#">Login</a></div>';
+            echo '<div class="login" onclick="show_login_popup()"><a href="#">Login</a></div>';
         }
         ?>
         <div id="search-container"><input id="search-data" type="text" placeholder="Search"/>

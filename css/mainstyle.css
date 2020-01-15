@@ -200,7 +200,13 @@ a
     font-size: 30px;
     border-bottom: 1px dashed #cccccc;
 }
-
+.logout
+{
+    grid-column:1/4;
+    font-size: 30px;
+    color: #f44336;
+    border-bottom: 1px dashed #cccccc;
+}
 .banner
 {
     grid-row: 2;

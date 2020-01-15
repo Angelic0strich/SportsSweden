@@ -3,7 +3,7 @@
     <div id="menu-bar">
         <!-- LOGIN -->
         <?php
-        if(isUserLoggedIn()){
+        if("isUserLoggedIn()"){
             //echo "<div class='login'><a href=\"#\">".$_SESSION['username']."</a></div>";
             echo "<div class='logout'>Logout</div>";
         }else{

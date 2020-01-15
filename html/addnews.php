@@ -69,8 +69,7 @@ if (isset($_POST['submit']) && isset($_POST['text'])) {
             <div id="addnews" class="container">
                 <form name="addform" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
                     <br>
-                    <a href="form-club.php"> Create Club </a>
-                    |
+
                     <a href="editnews.php"> Edit News </a>
                     <br>
                     <br>

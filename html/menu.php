@@ -3,9 +3,10 @@
     <div id="menu-bar">
         <!-- LOGIN -->
         <?php
-        if("isUserLoggedIn()"){
+        //require "../php/loggedInStatus.php";
+        if(isUserLoggedIn()){
             //echo "<div class='login'><a href=\"#\">".$_SESSION['username']."</a></div>";
-            echo "<div class='logout'>Logout</div>";
+            echo "<div class='logout'><a href='../php/logout.php'>Logout</a></div>";
         }else{
             echo '<div class="login" onclick="show_login_popup()"><a href="#">Login</a></div>';
         }

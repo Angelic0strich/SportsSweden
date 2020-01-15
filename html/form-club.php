@@ -64,7 +64,7 @@
         <input type="submit" id="submit">
     </div>
     <br>
-    <a href="addnews.php"> Back </a>
+    <a href="index.php"> Back </a>
 
 
 </form>
